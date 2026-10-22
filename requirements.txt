@@ -1,0 +1,5 @@
+crewai
+duckduckgo-search
+numpy
+python-dotenv
+sentence-transformers

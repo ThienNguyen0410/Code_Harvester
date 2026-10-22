@@ -1,0 +1,1001 @@
+                                                                                                                                       │
+│  Tool: internet_search                                                                                                                │
+│  Args: {'query': 'Test_Harvester repository GitHub ThienNguyen0410'}                                                                  │
+│                                                                                                                                       │
+│                                                                                                                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+/mnt/c/Users/Thien/Documents/HCMUT/261/ĐACN/test/augmented_prompt.py:36: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+Tool internet_search executed with result: Không tìm thấy thông tin liên quan....
+╭────────────────────────────────────────────────── ✅ Tool Execution Completed (#1) ───────────────────────────────────────────────────╮
+│                                                                                                                                       │
+│  Tool Completed                                                                                                                       │
+│  Tool: internet_search                                                                                                                │
+│  Output: Không tìm thấy thông tin liên quan.                                                                                          │
+│                                                                                                                                       │
+│                                                                                                                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+/mnt/c/Users/Thien/Documents/HCMUT/261/ĐACN/test/augmented_prompt.py:36: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+╭─────────────────────────────────────────────────── 🔧 Tool Execution Started (#2) ────────────────────────────────────────────────────╮
+│                                                                                                                                       │
+│  Tool: internet_search                                                                                                                │
+│  Args: {'query': 'https://github.com/ThienNguyen0410/Test_Harvester'}                                                                 │
+│                                                                                                                                       │
+│                                                                                                                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+Tool internet_search executed with result: Không tìm thấy thông tin liên quan....
+╭────────────────────────────────────────────────── ✅ Tool Execution Completed (#2) ───────────────────────────────────────────────────╮
+│                                                                                                                                       │
+│  Tool Completed                                                                                                                       │
+│  Tool: internet_search                                                                                                                │
+│  Output: Không tìm thấy thông tin liên quan.                                                                                          │
+│                                                                                                                                       │
+│                                                                                                                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+Maximum iterations reached. Requesting final answer.
+[Finalize] todos_count=0, todos_with_results=0
+╭──────────────────────────────────────────────────────── ✅ Agent Final Answer ────────────────────────────────────────────────────────╮
+│                                                                                                                                       │
+│  Agent: Technical Research Writer                                                                                                     │
+│                                                                                                                                       │
+│  Final Answer:                                                                                                                        │
+│  Để viết một hàm **summarize_library** trong một dự án Python, bạn cần thực hiện các bước sau với chi tiết kỹ thuật:                  │
+│                                                                                                                                       │
+│  1. **Thu thập metadata**                                                                                                             │
+│     - Sử dụng `importlib.metadata` (Python 3.8+) hoặc `pkg_resources` để lấy tên, phiên bản, mô tả ngắn gọn và danh sách phụ thuộc    │
+│  của thư viện.                                                                                                                        │
+│     - Đọc `setup.cfg`, `pyproject.toml` hoặc `setup.py` để trích xuất thông tin cấu hình, đặc biệt là `long_description` và           │
+│  `classifiers`.                                                                                                                       │
+│                                                                                                                                       │
+│  2. **Phân tích mã nguồn**                                                                                                            │
+│     - Dùng `ast` để lược đồ cây cú pháp của các module chính, tìm các hàm, lớp, và docstring.                                         │
+│     - Tính toán số lượng dòng, số hàm, số lớp, và độ sâu lồng nhau.                                                                   │
+│     - Đánh giá mức độ sử dụng type hints bằng `typing.get_type_hints` và `mypy` để xác định tính nhất quán kiểu dữ liệu.              │
+│                                                                                                                                       │
+│  3. **Tạo bản tóm tắt**                                                                                                               │
+│     - Kết hợp metadata và dữ liệu phân tích thành một dictionary hoặc JSON.                                                           │
+│     - Định dạng thành một chuỗi Markdown:                                                                                             │
+│       ```markdown                                                                                                                     │
+│       # <Library Name> v<Version>                                                                                                     │
+│       <Short Description>                                                                                                             │
+│                                                                                                                                       │
+│       ## Đặc điểm chính                                                                                                               │
+│       - Số module: <n>                                                                                                                │
+│       - Số hàm: <n>                                                                                                                   │
+│       - Số lớp: <n>                                                                                                                   │
+│       - Phụ thuộc: <list>                                                                                                             │
+│                                                                                                                                       │
+│       ## Đánh giá                                                                                                                     │
+│       - Độ phủ test: <percentage>                                                                                                     │
+│       - Tính nhất quán kiểu: <score>                                                                                                  │
+│       ```                                                                                                                             │
+│     - Nếu thư viện có `README.md`, trích xuất đoạn giới thiệu đầu tiên để làm phần mô tả ngắn.                                        │
+│                                                                                                                                       │
+│  4. **Tích hợp vào pipeline**                                                                                                         │
+│     - Định nghĩa hàm `summarize_library(path: str) -> str` nhận đường dẫn tới thư mục gốc của thư viện.                               │
+│     - Sử dụng `pathlib.Path` để duyệt thư mục, lọc file `.py`.                                                                        │
+│     - Trả về chuỗi Markdown đã tạo, có thể ghi vào file `SUMMARY.md` hoặc in ra console.                                              │
+│                                                                                                                                       │
+│  5. **Kiểm thử**                                                                                                                      │
+│     - Viết unit test với `pytest` kiểm tra tính đúng đắn của metadata, số lượng hàm/lớp, và định dạng đầu ra.                         │
+│     - Sử dụng `coverage` để đảm bảo hàm được thực thi đầy đủ.                                                                         │
+│                                                                                                                                       │
+│  Những bước này cung cấp một khung tổng quát để tự động tạo bản tóm tắt chi tiết cho bất kỳ thư viện Python nào, ngay cả khi          │
+│  repository cụ thể không được truy cập.                                                                                               │
+│                                                                                                                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭───────────────────────────────────────────────────────── 📋 Task Completion ──────────────────────────────────────────────────────────╮
+│                                                                                                                                       │
+│  Task Completed                                                                                                                       │
+│  Name: Given an input text prompt: write a function to summarize the library                                                          │
+│                                                                                                                                       │
+│  Add more technical details about some of the topics in this text prompt in the general context of the following github repo:         │
+│  https://github.com/ThienNguyen0410/Test_Harvester.git.                                                                               │
+│                                                                                                                                       │
+│  If you can’t find how it is implemented in the repository, then provide information on how it is implemented generally.              │
+│  Ensure that you only give info on specifically the topics present in the input text prompt. Do not deviate from the topic.           │
+│  Agent: Technical Research Writer                                                                                                     │
+│                                                                                                                                       │
+│                                                                                                                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+===== AUGMENTED PROMPT =====
+Để viết một hàm **summarize_library** trong một dự án Python, bạn cần thực hiện các bước sau với chi tiết kỹ thuật:
+
+1. **Thu thập metadata**  
+   - Sử dụng `importlib.metadata` (Python 3.8+) hoặc `pkg_resources` để lấy tên, phiên bản, mô tả ngắn gọn và danh sách phụ thuộc của thư viện.  
+   - Đọc `setup.cfg`, `pyproject.toml` hoặc `setup.py` để trích xuất thông tin cấu hình, đặc biệt là `long_description` và `classifiers`.
+
+2. **Phân tích mã nguồn**  
+   - Dùng `ast` để lược đồ cây cú pháp của các module chính, tìm các hàm, lớp, và docstring.  
+   - Tính toán số lượng dòng, số hàm, số lớp, và độ sâu lồng nhau.  
+   - Đánh giá mức độ sử dụng type hints bằng `typing.get_type_hints` và `mypy` để xác định tính nhất quán kiểu dữ liệu.
+
+3. **Tạo bản tóm tắt**  
+   - Kết hợp metadata và dữ liệu phân tích thành một dictionary hoặc JSON.  
+   - Định dạng thành một chuỗi Markdown:  
+     ```markdown
+     # <Library Name> v<Version>
+     <Short Description>
+     
+     ## Đặc điểm chính
+     - Số module: <n>
+     - Số hàm: <n>
+     - Số lớp: <n>
+     - Phụ thuộc: <list>
+     
+     ## Đánh giá
+     - Độ phủ test: <percentage>
+     - Tính nhất quán kiểu: <score>
+     ```
+   - Nếu thư viện có `README.md`, trích xuất đoạn giới thiệu đầu tiên để làm phần mô tả ngắn.
+
+4. **Tích hợp vào pipeline**  
+   - Định nghĩa hàm `summarize_library(path: str) -> str` nhận đường dẫn tới thư mục gốc của thư viện.  
+   - Sử dụng `pathlib.Path` để duyệt thư mục, lọc file `.py`.  
+   - Trả về chuỗi Markdown đã tạo, có thể ghi vào file `SUMMARY.md` hoặc in ra console.
+
+5. **Kiểm thử**  
+   - Viết unit test với `pytest` kiểm tra tính đúng đắn của metadata, số lượng hàm/lớp, và định dạng đầu ra.  
+   - Sử dụng `coverage` để đảm bảo hàm được thực thi đầy đủ.
+
+Những bước này cung cấp một khung tổng quát để tự động tạo bản tóm tắt chi tiết cho bất kỳ thư viện Python nào, ngay cả khi repository cụ thể không được truy cập.
+╭─────────────────────────────────────────────────────────── Crew Completion ───────────────────────────────────────────────────────────╮
+│                                                                                                                                       │
+│  Crew Execution Completed                                                                                                             │
+│  Name: crew                                                                                                                           │
+│  ID: d9d38bc0-baab-4d87-9934-960d3d4cc299                                                                                             │
+│  Final Output: Để viết một hàm **summarize_library** trong một dự án Python, bạn cần thực hiện các bước sau với chi tiết kỹ thuật:    │
+│                                                                                                                                       │
+│  1. **Thu thập metadata**                                                                                                             │
+│     - Sử dụng `importlib.metadata` (Python 3.8+) hoặc `pkg_resources` để lấy tên, phiên bản, mô tả ngắn gọn và danh sách phụ thuộc    │
+│  của thư viện.                                                                                                                        │
+│     - Đọc `setup.cfg`, `pyproject.toml` hoặc `setup.py` để trích xuất thông tin cấu hình, đặc biệt là `long_description` và           │
+│  `classifiers`.                                                                                                                       │
+│                                                                                                                                       │
+│  2. **Phân tích mã nguồn**                                                                                                            │
+│     - Dùng `ast` để lược đồ cây cú pháp của các module chính, tìm các hàm, lớp, và docstring.                                         │
+│     - Tính toán số lượng dòng, số hàm, số lớp, và độ sâu lồng nhau.                                                                   │
+│     - Đánh giá mức độ sử dụng type hints bằng `typing.get_type_hints` và `mypy` để xác định tính nhất quán kiểu dữ liệu.              │
+│                                                                                                                                       │
+│  3. **Tạo bản tóm tắt**                                                                                                               │
+│     - Kết hợp metadata và dữ liệu phân tích thành một dictionary hoặc JSON.                                                           │
+│     - Định dạng thành một chuỗi Markdown:                                                                                             │
+│       ```markdown                                                                                                                     │
+│       # <Library Name> v<Version>                                                                                                     │
+│       <Short Description>                                                                                                             │
+│                                                                                                                                       │
+│       ## Đặc điểm chính                                                                                                               │
+│       - Số module: <n>                                                                                                                │
+│       - Số hàm: <n>                                                                                                                   │
+│       - Số lớp: <n>                                                                                                                   │
+│       - Phụ thuộc: <list>                                                                                                             │
+│                                                                                                                                       │
+│       ## Đánh giá                                                                                                                     │
+│       - Độ phủ test: <percentage>                                                                                                     │
+│       - Tính nhất quán kiểu: <score>                                                                                                  │
+│       ```                                                                                                                             │
+│     - Nếu thư viện có `README.md`, trích xuất đoạn giới thiệu đầu tiên để làm phần mô tả ngắn.                                        │
+│                                                                                                                                       │
+│  4. **Tích hợp vào pipeline**                                                                                                         │
+│     - Định nghĩa hàm `summarize_library(path: str) -> str` nhận đường dẫn tới thư mục gốc của thư viện.                               │
+│     - Sử dụng `pathlib.Path` để duyệt thư mục, lọc file `.py`.                                                                        │
+│     - Trả về chuỗi Markdown đã tạo, có thể ghi vào file `SUMMARY.md` hoặc in ra console.                                              │
+│                                                                                                                                       │
+│  5. **Kiểm thử**                                                                                                                      │
+│     - Viết unit test với `pytest` kiểm tra tính đúng đắn của metadata, số lượng hàm/lớp, và định dạng đầu ra.                         │
+│     - Sử dụng `coverage` để đảm bảo hàm được thực thi đầy đủ.                                                                         │
+│                                                                                                                                       │
+│  Những bước này cung cấp một khung tổng quát để tự động tạo bản tóm tắt chi tiết cho bất kỳ thư viện Python nào, ngay cả khi          │
+│  repository cụ thể không được truy cập.                                                                                               │
+│                                                                                                                                       │
+│                                                                                                                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────────────────── Tracing Status ────────────────────────────────────────────────────────────╮
+│                                                                                                                                       │
+│  Info: Tracing is disabled.                                                                                                           │
+│                                                                                                                                       │
+│  To enable tracing, do any one of these:                                                                                              │
+│  • Set tracing=True in your Crew/Flow code                                                                                            │
+│  • Set CREWAI_TRACING_ENABLED=true in your project's .env file                                                                        │
+│  • Run: crewai traces enable                                                                                                          │
+│                                                                                                                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+===== RANKING TABLE =====
+
+--- Rank 1 | Similarity: 0.5582 | Stream: stream03 ---
+def summarize_library(library):
+    total = len(library.books)
+    free = library.available_count()
+    return {"total": total, "available": free, "borrowed": total - free}
+
+--- Rank 2 | Similarity: 0.5472 | Stream: stream03 ---
+def main():
+    lib = Library.from_list("City Library", [
+        Book("Dune", "Frank Herbert", "978-0441172719", 412),
+        Book("Clean Code", "Robert Martin", "978-0132350884", 464),
+        Book("The Pragmatic Programmer", "Andrew Hunt", "978-0135957059", 352),
+    ])
+    member = PremiumMember("An", "M001", fee=20.0)
+    lib.register(member)
+    member.add_book(lib.books[0])
+    print(summarize_library(lib))
+    print(Library.format_catalog(lib.books))
+
+--- Rank 3 | Similarity: 0.3791 | Stream: stream03 ---
+def format_catalog(books):
+        return "\n".join(b.describe() for b in books)
+
+--- Rank 4 | Similarity: 0.3547 | Stream: stream02 ---
+def __init__(self, title, author, isbn, pages):
+        self.title = title
+        self.author = author
+        self.isbn = isbn
+        self.pages = pages
+        self.available = True
+
+--- Rank 5 | Similarity: 0.3298 | Stream: stream02 ---
+def __init__(self, name):
+        self.name = name
+        self.books = []
+        self.members = []
+
+--- Rank 6 | Similarity: 0.3102 | Stream: stream02 ---
+def main():
+    lib = Library.from_list("City Library", [
+        Book("Dune", "Frank Herbert", "978-0441172719", 412),
+        Book("Clean Code", "Robert Martin", "978-0132350884", 464),
+        Book("The Pragmatic Programmer", "Andrew Hunt", "978-0135957059", 352),
+    ])
+    member = PremiumMember("An", "M001", fee=20.0)
+    lib.register(member)
+    member.add_book(lib.books[0])
+    print(summarize_library(lib))
+    print(Library.format_catalog(lib.books))
+
+--- Rank 7 | Similarity: 0.2525 | Stream: stream01 ---
+def main():
+    lib = Library.from_list("City Library", [
+        Book("Dune", "Frank Herbert", "978-0441172719", 412),
+        Book("Clean Code", "Robert Martin", "978-0132350884", 464),
+        Book("The Pragmatic Programmer", "Andrew Hunt", "978-0135957059", 352),
+    ])
+    member = PremiumMember("An", "M001", fee=20.0)
+    lib.register(member)
+    member.add_book(lib.books[0])
+    print(summarize_library(lib))
+    print(Library.format_catalog(lib.books))
+
+--- Rank 8 | Similarity: 0.2247 | Stream: stream01 ---
+def add_book(self, book):
+        if not self.can_borrow():
+            raise RuntimeError("Loan limit reached")
+        book.borrow()
+        self.borrowed.append(book)
+
+--- Rank 9 | Similarity: 0.2140 | Stream: stream01 ---
+def make_due_date(loan_days=14):
+    return date.today() + timedelta(days=loan_days)
+
+Đang sinh RPA code...
+/home/huuthien/.local/lib/python3.10/site-packages/crewai/agent/core.py:425: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(
+/home/huuthien/.local/lib/python3.10/site-packages/crewai/agent/core.py:433: DeprecationWarning: deprecated
+  if self.allow_code_execution:
+/home/huuthien/.local/lib/python3.10/site-packages/crewai/agent/core.py:444: DeprecationWarning: deprecated
+  if self.reasoning and self.planning_config is None:
+/home/huuthien/.local/lib/python3.10/site-packages/crewai/crew.py:650: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+╭────────────────────────────────────────────────────── 🚀 Crew Execution Started ──────────────────────────────────────────────────────╮
+│                                                                                                                                       │
+│  Crew Execution Started                                                                                                               │
+│  Name: crew                                                                                                                           │
+│  ID: f0f58f0f-a030-4266-996c-336802fb958a                                                                                             │
+│                                                                                                                                       │
+│                                                                                                                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+/home/huuthien/.local/lib/python3.10/site-packages/crewai/telemetry/telemetry.py:433: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if getattr(agent, "function_calling_llm", None)
+/home/huuthien/.local/lib/python3.10/site-packages/crewai/telemetry/telemetry.py:440: DeprecationWarning: deprecated
+  "allow_code_execution?": getattr(
+/home/huuthien/.local/lib/python3.10/site-packages/crewai/crews/utils.py:372: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  crew.function_calling_llm,
+/home/huuthien/.local/lib/python3.10/site-packages/crewai/crews/utils.py:87: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if not agent.function_calling_llm:  # type: ignore[attr-defined]
+/home/huuthien/.local/lib/python3.10/site-packages/crewai/agent/core.py:1300: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  function_calling_llm=self.function_calling_llm,
+/home/huuthien/.local/lib/python3.10/site-packages/crewai/crew.py:650: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/home/huuthien/.local/lib/python3.10/site-packages/crewai/crew.py:650: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/home/huuthien/.local/lib/python3.10/site-packages/crewai/crew.py:1675: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/home/huuthien/.local/lib/python3.10/site-packages/crewai/crew.py:1675: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/home/huuthien/.local/lib/python3.10/site-packages/crewai/crew.py:1682: DeprecationWarning: deprecated
+  and hasattr(agent, "multimodal")
+/home/huuthien/.local/lib/python3.10/site-packages/crewai/crew.py:1683: DeprecationWarning: deprecated
+  and getattr(agent, "multimodal", False)
+╭─────────────────────────────────────────────────────────── 📋 Task Started ───────────────────────────────────────────────────────────╮
+│                                                                                                                                       │
+│  Task Started                                                                                                                         │
+│  Name: Tạo đúng một Python function mới thỏa yêu cầu trong augmented prompt bên dưới. Dùng các function trong ranking table làm       │
+│  nguồn tham khảo về logic và cách triển khai; ưu tiên các hạng có similarity cao, chỉ tái sử dụng phần phù hợp.                       │
+│                                                                                                                                       │
+│  AUGMENTED PROMPT:                                                                                                                    │
+│  Để viết một hàm **summarize_library** trong một dự án Python, bạn cần thực hiện các bước sau với chi tiết kỹ thuật:                  │
+│                                                                                                                                       │
+│  1. **Thu thập metadata**                                                                                                             │
+│     - Sử dụng `importlib.metadata` (Python 3.8+) hoặc `pkg_resources` để lấy tên, phiên bản, mô tả ngắn gọn và danh sách phụ thuộc    │
+│  của thư viện.                                                                                                                        │
+│     - Đọc `setup.cfg`, `pyproject.toml` hoặc `setup.py` để trích xuất thông tin cấu hình, đặc biệt là `long_description` và           │
+│  `classifiers`.                                                                                                                       │
+│                                                                                                                                       │
+│  2. **Phân tích mã nguồn**                                                                                                            │
+│     - Dùng `ast` để lược đồ cây cú pháp của các module chính, tìm các hàm, lớp, và docstring.                                         │
+│     - Tính toán số lượng dòng, số hàm, số lớp, và độ sâu lồng nhau.                                                                   │
+│     - Đánh giá mức độ sử dụng type hints bằng `typing.get_type_hints` và `mypy` để xác định tính nhất quán kiểu dữ liệu.              │
+│                                                                                                                                       │
+│  3. **Tạo bản tóm tắt**                                                                                                               │
+│     - Kết hợp metadata và dữ liệu phân tích thành một dictionary hoặc JSON.                                                           │
+│     - Định dạng thành một chuỗi Markdown:                                                                                             │
+│       ```markdown                                                                                                                     │
+│       # <Library Name> v<Version>                                                                                                     │
+│       <Short Description>                                                                                                             │
+│                                                                                                                                       │
+│       ## Đặc điểm chính                                                                                                               │
+│       - Số module: <n>                                                                                                                │
+│       - Số hàm: <n>                                                                                                                   │
+│       - Số lớp: <n>                                                                                                                   │
+│       - Phụ thuộc: <list>                                                                                                             │
+│                                                                                                                                       │
+│       ## Đánh giá                                                                                                                     │
+│       - Độ phủ test: <percentage>                                                                                                     │
+│       - Tính nhất quán kiểu: <score>                                                                                                  │
+│       ```                                                                                                                             │
+│     - Nếu thư viện có `README.md`, trích xuất đoạn giới thiệu đầu tiên để làm phần mô tả ngắn.                                        │
+│                                                                                                                                       │
+│  4. **Tích hợp vào pipeline**                                                                                                         │
+│     - Định nghĩa hàm `summarize_library(path: str) -> str` nhận đường dẫn tới thư mục gốc của thư viện.                               │
+│     - Sử dụng `pathlib.Path` để duyệt thư mục, lọc file `.py`.                                                                        │
+│     - Trả về chuỗi Markdown đã tạo, có thể ghi vào file `SUMMARY.md` hoặc in ra console.                                              │
+│                                                                                                                                       │
+│  5. **Kiểm thử**                                                                                                                      │
+│     - Viết unit test với `pytest` kiểm tra tính đúng đắn của metadata, số lượng hàm/lớp, và định dạng đầu ra.                         │
+│     - Sử dụng `coverage` để đảm bảo hàm được thực thi đầy đủ.                                                                         │
+│                                                                                                                                       │
+│  Những bước này cung cấp một khung tổng quát để tự động tạo bản tóm tắt chi tiết cho bất kỳ thư viện Python nào, ngay cả khi          │
+│  repository cụ thể không được truy cập.                                                                                               │
+│                                                                                                                                       │
+│  RANKING TABLE (theo thứ tự xếp hạng):                                                                                                │
+│  Rank: 1                                                                                                                              │
+│  Similarity: 0.5581606030464172                                                                                                       │
+│  Stream: stream03                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def summarize_library(library):                                                                                                      │
+│      total = len(library.books)                                                                                                       │
+│      free = library.available_count()                                                                                                 │
+│      return {"total": total, "available": free, "borrowed": total - free}                                                             │
+│  Rank: 2                                                                                                                              │
+│  Similarity: 0.5472289323806763                                                                                                       │
+│  Stream: stream03                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def main():                                                                                                                          │
+│      lib = Library.from_list("City Library", [                                                                                        │
+│          Book("Dune", "Frank Herbert", "978-0441172719", 412),                                                                        │
+│          Book("Clean Code", "Robert Martin", "978-0132350884", 464),                                                                  │
+│          Book("The Pragmatic Programmer", "Andrew Hunt", "978-0135957059", 352),                                                      │
+│      ])                                                                                                                               │
+│      member = PremiumMember("An", "M001", fee=20.0)                                                                                   │
+│      lib.register(member)                                                                                                             │
+│      member.add_book(lib.books[0])                                                                                                    │
+│      print(summarize_library(lib))                                                                                                    │
+│      print(Library.format_catalog(lib.books))                                                                                         │
+│  Rank: 3                                                                                                                              │
+│  Similarity: 0.3791065216064453                                                                                                       │
+│  Stream: stream03                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def format_catalog(books):                                                                                                           │
+│          return "\n".join(b.describe() for b in books)                                                                                │
+│  Rank: 4                                                                                                                              │
+│  Similarity: 0.3547082841396332                                                                                                       │
+│  Stream: stream02                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def __init__(self, title, author, isbn, pages):                                                                                      │
+│          self.title = title                                                                                                           │
+│          self.author = author                                                                                                         │
+│          self.isbn = isbn                                                                                                             │
+│          self.pages = pages                                                                                                           │
+│          self.available = True                                                                                                        │
+│  Rank: 5                                                                                                                              │
+│  Similarity: 0.3298214375972748                                                                                                       │
+│  Stream: stream02                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def __init__(self, name):                                                                                                            │
+│          self.name = name                                                                                                             │
+│          self.books = []                                                                                                              │
+│          self.members = []                                                                                                            │
+│  Rank: 6                                                                                                                              │
+│  Similarity: 0.3101941645145416                                                                                                       │
+│  Stream: stream02                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def main():                                                                                                                          │
+│      lib = Library.from_list("City Library", [                                                                                        │
+│          Book("Dune", "Frank Herbert", "978-0441172719", 412),                                                                        │
+│          Book("Clean Code", "Robert Martin", "978-0132350884", 464),                                                                  │
+│          Book("The Pragmatic Programmer", "Andrew Hunt", "978-0135957059", 352),                                                      │
+│      ])                                                                                                                               │
+│      member = PremiumMember("An", "M001", fee=20.0)                                                                                   │
+│      lib.register(member)                                                                                                             │
+│      member.add_book(lib.books[0])                                                                                                    │
+│      print(summarize_library(lib))                                                                                                    │
+│      print(Library.format_catalog(lib.books))                                                                                         │
+│  Rank: 7                                                                                                                              │
+│  Similarity: 0.2524765431880951                                                                                                       │
+│  Stream: stream01                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def main():                                                                                                                          │
+│      lib = Library.from_list("City Library", [                                                                                        │
+│          Book("Dune", "Frank Herbert", "978-0441172719", 412),                                                                        │
+│          Book("Clean Code", "Robert Martin", "978-0132350884", 464),                                                                  │
+│          Book("The Pragmatic Programmer", "Andrew Hunt", "978-0135957059", 352),                                                      │
+│      ])                                                                                                                               │
+│      member = PremiumMember("An", "M001", fee=20.0)                                                                                   │
+│      lib.register(member)                                                                                                             │
+│      member.add_book(lib.books[0])                                                                                                    │
+│      print(summarize_library(lib))                                                                                                    │
+│      print(Library.format_catalog(lib.books))                                                                                         │
+│  Rank: 8                                                                                                                              │
+│  Similarity: 0.22473663091659546                                                                                                      │
+│  Stream: stream01                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def add_book(self, book):                                                                                                            │
+│          if not self.can_borrow():                                                                                                    │
+│              raise RuntimeError("Loan limit reached")                                                                                 │
+│          book.borrow()                                                                                                                │
+│          self.borrowed.append(book)                                                                                                   │
+│  Rank: 9                                                                                                                              │
+│  Similarity: 0.21398001909255981                                                                                                      │
+│  Stream: stream01                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def make_due_date(loan_days=14):                                                                                                     │
+│      return date.today() + timedelta(days=loan_days)                                                                                  │
+│                                                                                                                                       │
+│  STANDARDIZE:                                                                                                                         │
+│  ```text                                                                                                                              │
+│  ## Standarlize of a RPA function                                                                                                     │
+│                                                                                                                                       │
+│  @keyword(<keyword>)                                                                                                                  │
+│  def <function_name>:                                                                                                                 │
+│      <comment of function which must include the generated date and the functionalities of that function>                             │
+│      <function_body>                                                                                                                  │
+│                                                                                                                                       │
+│  ```                                                                                                                                  │
+│                                                                                                                                       │
+│  Tuân thủ chuẩn trên: tạo function Python hợp lệ, dùng decorator @keyword(...) với keyword phù hợp, và có comment hoặc docstring ghi  │
+│  ngày tạo code là 2026-10-21 cùng chức năng của function. Thay các placeholder trong tài liệu bằng giá trị thực tế; phần khai báo     │
+│  function phải có dấu ngoặc tham số và dấu hai chấm. Nếu cần để code chạy độc lập, hãy thêm import decorator phù hợp. Chỉ trả về mã   │
+│  Python, không giải thích.                                                                                                            │
+│  ID: 3eccd54c-b806-4637-af46-7b187b51b670                                                                                             │
+│                                                                                                                                       │
+│                                                                                                                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────────────────────────────────── 🤖 Agent Started ───────────────────────────────────────────────────────────╮
+│                                                                                                                                       │
+│  Agent: RPA Python Code Generator                                                                                                     │
+│                                                                                                                                       │
+│  Task: Tạo đúng một Python function mới thỏa yêu cầu trong augmented prompt bên dưới. Dùng các function trong ranking table làm       │
+│  nguồn tham khảo về logic và cách triển khai; ưu tiên các hạng có similarity cao, chỉ tái sử dụng phần phù hợp.                       │
+│                                                                                                                                       │
+│  AUGMENTED PROMPT:                                                                                                                    │
+│  Để viết một hàm **summarize_library** trong một dự án Python, bạn cần thực hiện các bước sau với chi tiết kỹ thuật:                  │
+│                                                                                                                                       │
+│  1. **Thu thập metadata**                                                                                                             │
+│     - Sử dụng `importlib.metadata` (Python 3.8+) hoặc `pkg_resources` để lấy tên, phiên bản, mô tả ngắn gọn và danh sách phụ thuộc    │
+│  của thư viện.                                                                                                                        │
+│     - Đọc `setup.cfg`, `pyproject.toml` hoặc `setup.py` để trích xuất thông tin cấu hình, đặc biệt là `long_description` và           │
+│  `classifiers`.                                                                                                                       │
+│                                                                                                                                       │
+│  2. **Phân tích mã nguồn**                                                                                                            │
+│     - Dùng `ast` để lược đồ cây cú pháp của các module chính, tìm các hàm, lớp, và docstring.                                         │
+│     - Tính toán số lượng dòng, số hàm, số lớp, và độ sâu lồng nhau.                                                                   │
+│     - Đánh giá mức độ sử dụng type hints bằng `typing.get_type_hints` và `mypy` để xác định tính nhất quán kiểu dữ liệu.              │
+│                                                                                                                                       │
+│  3. **Tạo bản tóm tắt**                                                                                                               │
+│     - Kết hợp metadata và dữ liệu phân tích thành một dictionary hoặc JSON.                                                           │
+│     - Định dạng thành một chuỗi Markdown:                                                                                             │
+│       ```markdown                                                                                                                     │
+│       # <Library Name> v<Version>                                                                                                     │
+│       <Short Description>                                                                                                             │
+│                                                                                                                                       │
+│       ## Đặc điểm chính                                                                                                               │
+│       - Số module: <n>                                                                                                                │
+│       - Số hàm: <n>                                                                                                                   │
+│       - Số lớp: <n>                                                                                                                   │
+│       - Phụ thuộc: <list>                                                                                                             │
+│                                                                                                                                       │
+│       ## Đánh giá                                                                                                                     │
+│       - Độ phủ test: <percentage>                                                                                                     │
+│       - Tính nhất quán kiểu: <score>                                                                                                  │
+│       ```                                                                                                                             │
+│     - Nếu thư viện có `README.md`, trích xuất đoạn giới thiệu đầu tiên để làm phần mô tả ngắn.                                        │
+│                                                                                                                                       │
+│  4. **Tích hợp vào pipeline**                                                                                                         │
+│     - Định nghĩa hàm `summarize_library(path: str) -> str` nhận đường dẫn tới thư mục gốc của thư viện.                               │
+│     - Sử dụng `pathlib.Path` để duyệt thư mục, lọc file `.py`.                                                                        │
+│     - Trả về chuỗi Markdown đã tạo, có thể ghi vào file `SUMMARY.md` hoặc in ra console.                                              │
+│                                                                                                                                       │
+│  5. **Kiểm thử**                                                                                                                      │
+│     - Viết unit test với `pytest` kiểm tra tính đúng đắn của metadata, số lượng hàm/lớp, và định dạng đầu ra.                         │
+│     - Sử dụng `coverage` để đảm bảo hàm được thực thi đầy đủ.                                                                         │
+│                                                                                                                                       │
+│  Những bước này cung cấp một khung tổng quát để tự động tạo bản tóm tắt chi tiết cho bất kỳ thư viện Python nào, ngay cả khi          │
+│  repository cụ thể không được truy cập.                                                                                               │
+│                                                                                                                                       │
+│  RANKING TABLE (theo thứ tự xếp hạng):                                                                                                │
+│  Rank: 1                                                                                                                              │
+│  Similarity: 0.5581606030464172                                                                                                       │
+│  Stream: stream03                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def summarize_library(library):                                                                                                      │
+│      total = len(library.books)                                                                                                       │
+│      free = library.available_count()                                                                                                 │
+│      return {"total": total, "available": free, "borrowed": total - free}                                                             │
+│  Rank: 2                                                                                                                              │
+│  Similarity: 0.5472289323806763                                                                                                       │
+│  Stream: stream03                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def main():                                                                                                                          │
+│      lib = Library.from_list("City Library", [                                                                                        │
+│          Book("Dune", "Frank Herbert", "978-0441172719", 412),                                                                        │
+│          Book("Clean Code", "Robert Martin", "978-0132350884", 464),                                                                  │
+│          Book("The Pragmatic Programmer", "Andrew Hunt", "978-0135957059", 352),                                                      │
+│      ])                                                                                                                               │
+│      member = PremiumMember("An", "M001", fee=20.0)                                                                                   │
+│      lib.register(member)                                                                                                             │
+│      member.add_book(lib.books[0])                                                                                                    │
+│      print(summarize_library(lib))                                                                                                    │
+│      print(Library.format_catalog(lib.books))                                                                                         │
+│  Rank: 3                                                                                                                              │
+│  Similarity: 0.3791065216064453                                                                                                       │
+│  Stream: stream03                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def format_catalog(books):                                                                                                           │
+│          return "\n".join(b.describe() for b in books)                                                                                │
+│  Rank: 4                                                                                                                              │
+│  Similarity: 0.3547082841396332                                                                                                       │
+│  Stream: stream02                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def __init__(self, title, author, isbn, pages):                                                                                      │
+│          self.title = title                                                                                                           │
+│          self.author = author                                                                                                         │
+│          self.isbn = isbn                                                                                                             │
+│          self.pages = pages                                                                                                           │
+│          self.available = True                                                                                                        │
+│  Rank: 5                                                                                                                              │
+│  Similarity: 0.3298214375972748                                                                                                       │
+│  Stream: stream02                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def __init__(self, name):                                                                                                            │
+│          self.name = name                                                                                                             │
+│          self.books = []                                                                                                              │
+│          self.members = []                                                                                                            │
+│  Rank: 6                                                                                                                              │
+│  Similarity: 0.3101941645145416                                                                                                       │
+│  Stream: stream02                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def main():                                                                                                                          │
+│      lib = Library.from_list("City Library", [                                                                                        │
+│          Book("Dune", "Frank Herbert", "978-0441172719", 412),                                                                        │
+│          Book("Clean Code", "Robert Martin", "978-0132350884", 464),                                                                  │
+│          Book("The Pragmatic Programmer", "Andrew Hunt", "978-0135957059", 352),                                                      │
+│      ])                                                                                                                               │
+│      member = PremiumMember("An", "M001", fee=20.0)                                                                                   │
+│      lib.register(member)                                                                                                             │
+│      member.add_book(lib.books[0])                                                                                                    │
+│      print(summarize_library(lib))                                                                                                    │
+│      print(Library.format_catalog(lib.books))                                                                                         │
+│  Rank: 7                                                                                                                              │
+│  Similarity: 0.2524765431880951                                                                                                       │
+│  Stream: stream01                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def main():                                                                                                                          │
+│      lib = Library.from_list("City Library", [                                                                                        │
+│          Book("Dune", "Frank Herbert", "978-0441172719", 412),                                                                        │
+│          Book("Clean Code", "Robert Martin", "978-0132350884", 464),                                                                  │
+│          Book("The Pragmatic Programmer", "Andrew Hunt", "978-0135957059", 352),                                                      │
+│      ])                                                                                                                               │
+│      member = PremiumMember("An", "M001", fee=20.0)                                                                                   │
+│      lib.register(member)                                                                                                             │
+│      member.add_book(lib.books[0])                                                                                                    │
+│      print(summarize_library(lib))                                                                                                    │
+│      print(Library.format_catalog(lib.books))                                                                                         │
+│  Rank: 8                                                                                                                              │
+│  Similarity: 0.22473663091659546                                                                                                      │
+│  Stream: stream01                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def add_book(self, book):                                                                                                            │
+│          if not self.can_borrow():                                                                                                    │
+│              raise RuntimeError("Loan limit reached")                                                                                 │
+│          book.borrow()                                                                                                                │
+│          self.borrowed.append(book)                                                                                                   │
+│  Rank: 9                                                                                                                              │
+│  Similarity: 0.21398001909255981                                                                                                      │
+│  Stream: stream01                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def make_due_date(loan_days=14):                                                                                                     │
+│      return date.today() + timedelta(days=loan_days)                                                                                  │
+│                                                                                                                                       │
+│  STANDARDIZE:                                                                                                                         │
+│  ```text                                                                                                                              │
+│  ## Standarlize of a RPA function                                                                                                     │
+│                                                                                                                                       │
+│  @keyword(<keyword>)                                                                                                                  │
+│  def <function_name>:                                                                                                                 │
+│      <comment of function which must include the generated date and the functionalities of that function>                             │
+│      <function_body>                                                                                                                  │
+│                                                                                                                                       │
+│  ```                                                                                                                                  │
+│                                                                                                                                       │
+│  Tuân thủ chuẩn trên: tạo function Python hợp lệ, dùng decorator @keyword(...) với keyword phù hợp, và có comment hoặc docstring ghi  │
+│  ngày tạo code là 2026-10-21 cùng chức năng của function. Thay các placeholder trong tài liệu bằng giá trị thực tế; phần khai báo     │
+│  function phải có dấu ngoặc tham số và dấu hai chấm. Nếu cần để code chạy độc lập, hãy thêm import decorator phù hợp. Chỉ trả về mã   │
+│  Python, không giải thích.                                                                                                            │
+│                                                                                                                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+[Finalize] todos_count=0, todos_with_results=0
+╭──────────────────────────────────────────────────────── ✅ Agent Final Answer ────────────────────────────────────────────────────────╮
+│                                                                                                                                       │
+│  Agent: RPA Python Code Generator                                                                                                     │
+│                                                                                                                                       │
+│  Final Answer:                                                                                                                        │
+│  ```python                                                                                                                            │
+│  from pathlib import Path                                                                                                             │
+│  import ast                                                                                                                           │
+│  import importlib.metadata                                                                                                            │
+│  import re                                                                                                                            │
+│  from datetime import datetime                                                                                                        │
+│  from robot.api.deco import keyword                                                                                                   │
+│                                                                                                                                       │
+│  @keyword("Summarize Library")                                                                                                        │
+│  def summarize_library(path: str) -> str:                                                                                             │
+│      """                                                                                                                              │
+│      Created 2026-10-21                                                                                                               │
+│      Summarize a Python library by collecting metadata, analyzing source code,                                                        │
+│      and generating a Markdown summary.                                                                                               │
+│      """                                                                                                                              │
+│      lib_path = Path(path)                                                                                                            │
+│      if not lib_path.is_dir():                                                                                                        │
+│          raise FileNotFoundError(f"Directory not found: {path}")                                                                      │
+│                                                                                                                                       │
+│      # ---------- 1. Collect metadata ----------                                                                                      │
+│      metadata = {}                                                                                                                    │
+│      # Try pyproject.toml                                                                                                             │
+│      pyproject = lib_path / "pyproject.toml"                                                                                          │
+│      if pyproject.is_file():                                                                                                          │
+│          content = pyproject.read_text(encoding="utf-8")                                                                              │
+│          name_match = re.search(r'name\s*=\s*["\']([^"\']+)["\']', content)                                                           │
+│          version_match = re.search(r'version\s*=\s*["\']([^"\']+)["\']', content)                                                     │
+│          description_match = re.search(r'description\s*=\s*["\']([^"\']+)["\']', content)                                             │
+│          deps_match = re.findall(r'dependency\s*=\s*["\']([^"\']+)["\']', content)                                                    │
+│          metadata["name"] = name_match.group(1) if name_match else "Unknown"                                                          │
+│          metadata["version"] = version_match.group(1) if version_match else "Unknown"                                                 │
+│          metadata["description"] = description_match.group(1) if description_match else ""                                            │
+│          metadata["dependencies"] = deps_match                                                                                        │
+│      else:                                                                                                                            │
+│          # Fallback to setup.cfg                                                                                                      │
+│          setup_cfg = lib_path / "setup.cfg"                                                                                           │
+│          if setup_cfg.is_file():                                                                                                      │
+│              content = setup_cfg.read_text(encoding="utf-8")                                                                          │
+│              name_match = re.search(r'name\s*=\s*([^\n]+)', content)                                                                  │
+│              version_match = re.search(r'version\s*=\s*([^\n]+)', content)                                                            │
+│              description_match = re.search(r'description\s*=\s*([^\n]+)', content)                                                    │
+│              deps_match = re.findall(r'dependency\s*=\s*([^\n]+)', content)                                                           │
+│              metadata["name"] = name_match.group(1).strip() if name_match else "Unknown"                                              │
+│              metadata["version"] = version_match.group(1).strip() if version_match else "Unknown"                                     │
+│              metadata["description"] = description_match.group(1).strip() if description_match else ""                                │
+│              metadata["dependencies"] = [d.strip() for d in deps_match]                                                               │
+│          else:                                                                                                                        │
+│              # Try importlib.metadata if package is installed                                                                         │
+│              try:                                                                                                                     │
+│                  dist = importlib.metadata.distribution(metadata.get("name", ""))                                                     │
+│                  metadata["name"] = dist.metadata["Name"]                                                                             │
+│                  metadata["version"] = dist.version                                                                                   │
+│                  metadata["description"] = dist.metadata.get("Summary", "")                                                           │
+│                  metadata["dependencies"] = dist.requires or []                                                                       │
+│              except Exception:                                                                                                        │
+│                  metadata["name"] = "Unknown"                                                                                         │
+│                  metadata["version"] = "Unknown"                                                                                      │
+│                  metadata["description"] = ""                                                                                         │
+│                  metadata["dependencies"] = []                                                                                        │
+│                                                                                                                                       │
+│      # Read README.md for short description                                                                                           │
+│      readme = lib_path / "README.md"                                                                                                  │
+│      if readme.is_file():                                                                                                             │
+│          first_para = readme.read_text                                                                                                │
+│                                                                                                                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭───────────────────────────────────────────────────────── 📋 Task Completion ──────────────────────────────────────────────────────────╮
+│                                                                                                                                       │
+│  Task Completed                                                                                                                       │
+│  Name: Tạo đúng một Python function mới thỏa yêu cầu trong augmented prompt bên dưới. Dùng các function trong ranking table làm       │
+│  nguồn tham khảo về logic và cách triển khai; ưu tiên các hạng có similarity cao, chỉ tái sử dụng phần phù hợp.                       │
+│                                                                                                                                       │
+│  AUGMENTED PROMPT:                                                                                                                    │
+│  Để viết một hàm **summarize_library** trong một dự án Python, bạn cần thực hiện các bước sau với chi tiết kỹ thuật:                  │
+│                                                                                                                                       │
+│  1. **Thu thập metadata**                                                                                                             │
+│     - Sử dụng `importlib.metadata` (Python 3.8+) hoặc `pkg_resources` để lấy tên, phiên bản, mô tả ngắn gọn và danh sách phụ thuộc    │
+│  của thư viện.                                                                                                                        │
+│     - Đọc `setup.cfg`, `pyproject.toml` hoặc `setup.py` để trích xuất thông tin cấu hình, đặc biệt là `long_description` và           │
+│  `classifiers`.                                                                                                                       │
+│                                                                                                                                       │
+│  2. **Phân tích mã nguồn**                                                                                                            │
+│     - Dùng `ast` để lược đồ cây cú pháp của các module chính, tìm các hàm, lớp, và docstring.                                         │
+│     - Tính toán số lượng dòng, số hàm, số lớp, và độ sâu lồng nhau.                                                                   │
+│     - Đánh giá mức độ sử dụng type hints bằng `typing.get_type_hints` và `mypy` để xác định tính nhất quán kiểu dữ liệu.              │
+│                                                                                                                                       │
+│  3. **Tạo bản tóm tắt**                                                                                                               │
+│     - Kết hợp metadata và dữ liệu phân tích thành một dictionary hoặc JSON.                                                           │
+│     - Định dạng thành một chuỗi Markdown:                                                                                             │
+│       ```markdown                                                                                                                     │
+│       # <Library Name> v<Version>                                                                                                     │
+│       <Short Description>                                                                                                             │
+│                                                                                                                                       │
+│       ## Đặc điểm chính                                                                                                               │
+│       - Số module: <n>                                                                                                                │
+│       - Số hàm: <n>                                                                                                                   │
+│       - Số lớp: <n>                                                                                                                   │
+│       - Phụ thuộc: <list>                                                                                                             │
+│                                                                                                                                       │
+│       ## Đánh giá                                                                                                                     │
+│       - Độ phủ test: <percentage>                                                                                                     │
+│       - Tính nhất quán kiểu: <score>                                                                                                  │
+│       ```                                                                                                                             │
+│     - Nếu thư viện có `README.md`, trích xuất đoạn giới thiệu đầu tiên để làm phần mô tả ngắn.                                        │
+│                                                                                                                                       │
+│  4. **Tích hợp vào pipeline**                                                                                                         │
+│     - Định nghĩa hàm `summarize_library(path: str) -> str` nhận đường dẫn tới thư mục gốc của thư viện.                               │
+│     - Sử dụng `pathlib.Path` để duyệt thư mục, lọc file `.py`.                                                                        │
+│     - Trả về chuỗi Markdown đã tạo, có thể ghi vào file `SUMMARY.md` hoặc in ra console.                                              │
+│                                                                                                                                       │
+│  5. **Kiểm thử**                                                                                                                      │
+│     - Viết unit test với `pytest` kiểm tra tính đúng đắn của metadata, số lượng hàm/lớp, và định dạng đầu ra.                         │
+│     - Sử dụng `coverage` để đảm bảo hàm được thực thi đầy đủ.                                                                         │
+│                                                                                                                                       │
+│  Những bước này cung cấp một khung tổng quát để tự động tạo bản tóm tắt chi tiết cho bất kỳ thư viện Python nào, ngay cả khi          │
+│  repository cụ thể không được truy cập.                                                                                               │
+│                                                                                                                                       │
+│  RANKING TABLE (theo thứ tự xếp hạng):                                                                                                │
+│  Rank: 1                                                                                                                              │
+│  Similarity: 0.5581606030464172                                                                                                       │
+│  Stream: stream03                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def summarize_library(library):                                                                                                      │
+│      total = len(library.books)                                                                                                       │
+│      free = library.available_count()                                                                                                 │
+│      return {"total": total, "available": free, "borrowed": total - free}                                                             │
+│  Rank: 2                                                                                                                              │
+│  Similarity: 0.5472289323806763                                                                                                       │
+│  Stream: stream03                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def main():                                                                                                                          │
+│      lib = Library.from_list("City Library", [                                                                                        │
+│          Book("Dune", "Frank Herbert", "978-0441172719", 412),                                                                        │
+│          Book("Clean Code", "Robert Martin", "978-0132350884", 464),                                                                  │
+│          Book("The Pragmatic Programmer", "Andrew Hunt", "978-0135957059", 352),                                                      │
+│      ])                                                                                                                               │
+│      member = PremiumMember("An", "M001", fee=20.0)                                                                                   │
+│      lib.register(member)                                                                                                             │
+│      member.add_book(lib.books[0])                                                                                                    │
+│      print(summarize_library(lib))                                                                                                    │
+│      print(Library.format_catalog(lib.books))                                                                                         │
+│  Rank: 3                                                                                                                              │
+│  Similarity: 0.3791065216064453                                                                                                       │
+│  Stream: stream03                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def format_catalog(books):                                                                                                           │
+│          return "\n".join(b.describe() for b in books)                                                                                │
+│  Rank: 4                                                                                                                              │
+│  Similarity: 0.3547082841396332                                                                                                       │
+│  Stream: stream02                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def __init__(self, title, author, isbn, pages):                                                                                      │
+│          self.title = title                                                                                                           │
+│          self.author = author                                                                                                         │
+│          self.isbn = isbn                                                                                                             │
+│          self.pages = pages                                                                                                           │
+│          self.available = True                                                                                                        │
+│  Rank: 5                                                                                                                              │
+│  Similarity: 0.3298214375972748                                                                                                       │
+│  Stream: stream02                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def __init__(self, name):                                                                                                            │
+│          self.name = name                                                                                                             │
+│          self.books = []                                                                                                              │
+│          self.members = []                                                                                                            │
+│  Rank: 6                                                                                                                              │
+│  Similarity: 0.3101941645145416                                                                                                       │
+│  Stream: stream02                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def main():                                                                                                                          │
+│      lib = Library.from_list("City Library", [                                                                                        │
+│          Book("Dune", "Frank Herbert", "978-0441172719", 412),                                                                        │
+│          Book("Clean Code", "Robert Martin", "978-0132350884", 464),                                                                  │
+│          Book("The Pragmatic Programmer", "Andrew Hunt", "978-0135957059", 352),                                                      │
+│      ])                                                                                                                               │
+│      member = PremiumMember("An", "M001", fee=20.0)                                                                                   │
+│      lib.register(member)                                                                                                             │
+│      member.add_book(lib.books[0])                                                                                                    │
+│      print(summarize_library(lib))                                                                                                    │
+│      print(Library.format_catalog(lib.books))                                                                                         │
+│  Rank: 7                                                                                                                              │
+│  Similarity: 0.2524765431880951                                                                                                       │
+│  Stream: stream01                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def main():                                                                                                                          │
+│      lib = Library.from_list("City Library", [                                                                                        │
+│          Book("Dune", "Frank Herbert", "978-0441172719", 412),                                                                        │
+│          Book("Clean Code", "Robert Martin", "978-0132350884", 464),                                                                  │
+│          Book("The Pragmatic Programmer", "Andrew Hunt", "978-0135957059", 352),                                                      │
+│      ])                                                                                                                               │
+│      member = PremiumMember("An", "M001", fee=20.0)                                                                                   │
+│      lib.register(member)                                                                                                             │
+│      member.add_book(lib.books[0])                                                                                                    │
+│      print(summarize_library(lib))                                                                                                    │
+│      print(Library.format_catalog(lib.books))                                                                                         │
+│  Rank: 8                                                                                                                              │
+│  Similarity: 0.22473663091659546                                                                                                      │
+│  Stream: stream01                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def add_book(self, book):                                                                                                            │
+│          if not self.can_borrow():                                                                                                    │
+│              raise RuntimeError("Loan limit reached")                                                                                 │
+│          book.borrow()                                                                                                                │
+│          self.borrowed.append(book)                                                                                                   │
+│  Rank: 9                                                                                                                              │
+│  Similarity: 0.21398001909255981                                                                                                      │
+│  Stream: stream01                                                                                                                     │
+│  Code:                                                                                                                                │
+│  def make_due_date(loan_days=14):                                                                                                     │
+│      return date.today() + timedelta(days=loan_days)                                                                                  │
+│                                                                                                                                       │
+│  STANDARDIZE:                                                                                                                         │
+│  ```text                                                                                                                              │
+│  ## Standarlize of a RPA function                                                                                                     │
+│                                                                                                                                       │
+│  @keyword(<keyword>)                                                                                                                  │
+│  def <function_name>:                                                                                                                 │
+│      <comment of function which must include the generated date and the functionalities of that function>                             │
+│      <function_body>                                                                                                                  │
+│                                                                                                                                       │
+│  ```                                                                                                                                  │
+│                                                                                                                                       │
+│  Tuân thủ chuẩn trên: tạo function Python hợp lệ, dùng decorator @keyword(...) với keyword phù hợp, và có comment hoặc docstring ghi  │
+│  ngày tạo code là 2026-10-21 cùng chức năng của function. Thay các placeholder trong tài liệu bằng giá trị thực tế; phần khai báo     │
+│  function phải có dấu ngoặc tham số và dấu hai chấm. Nếu cần để code chạy độc lập, hãy thêm import decorator phù hợp. Chỉ trả về mã   │
+│  Python, không giải thích.                                                                                                            │
+│  Agent: RPA Python Code Generator                                                                                                     │
+│                                                                                                                                       │
+│                                                                                                                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────────────────── Crew Completion ───────────────────────────────────────────────────────────╮
+│                                                                                                                                       │
+│  Crew Execution Completed                                                                                                             │
+│  Name: crew                                                                                                                           │
+│  ID: f0f58f0f-a030-4266-996c-336802fb958a                                                                                             │
+│  Final Output: ```python                                                                                                              │
+│  from pathlib import Path                                                                                                             │
+│  import ast                                                                                                                           │
+│  import importlib.metadata                                                                                                            │
+│  import re                                                                                                                            │
+│  from datetime import datetime                                                                                                        │
+│  from robot.api.deco import keyword                                                                                                   │
+│                                                                                                                                       │
+│  @keyword("Summarize Library")                                                                                                        │
+│  def summarize_library(path: str) -> str:                                                                                             │
+│      """                                                                                                                              │
+│      Created 2026-10-21                                                                                                               │
+│      Summarize a Python library by collecting metadata, analyzing source code,                                                        │
+│      and generating a Markdown summary.                                                                                               │
+│      """                                                                                                                              │
+│      lib_path = Path(path)                                                                                                            │
+│      if not lib_path.is_dir():                                                                                                        │
+│          raise FileNotFoundError(f"Directory not found: {path}")                                                                      │
+│                                                                                                                                       │
+│      # ---------- 1. Collect metadata ----------                                                                                      │
+│      metadata = {}                                                                                                                    │
+│      # Try pyproject.toml                                                                                                             │
+│      pyproject = lib_path / "pyproject.toml"                                                                                          │
+│      if pyproject.is_file():                                                                                                          │
+│          content = pyproject.read_text(encoding="utf-8")                                                                              │
+│          name_match = re.search(r'name\s*=\s*["\']([^"\']+)["\']', content)                                                           │
+│          version_match = re.search(r'version\s*=\s*["\']([^"\']+)["\']', content)                                                     │
+│          description_match = re.search(r'description\s*=\s*["\']([^"\']+)["\']', content)                                             │
+│          deps_match = re.findall(r'dependency\s*=\s*["\']([^"\']+)["\']', content)                                                    │
+│          metadata["name"] = name_match.group(1) if name_match else "Unknown"                                                          │
+│          metadata["version"] = version_match.group(1) if version_match else "Unknown"                                                 │
+│          metadata["description"] = description_match.group(1) if description_match else ""                                            │
+│          metadata["dependencies"] = deps_match                                                                                        │
+│      else:                                                                                                                            │
+│          # Fallback to setup.cfg                                                                                                      │
+│          setup_cfg = lib_path / "setup.cfg"                                                                                           │
+│          if setup_cfg.is_file():                                                                                                      │
+│              content = setup_cfg.read_text(encoding="utf-8")                                                                          │
+│              name_match = re.search(r'name\s*=\s*([^\n]+)', content)                                                                  │
+│              version_match = re.search(r'version\s*=\s*([^\n]+)', content)                                                            │
+│              description_match = re.search(r'description\s*=\s*([^\n]+)', content)                                                    │
+│              deps_match = re.findall(r'dependency\s*=\s*([^\n]+)', content)                                                           │
+│              metadata["name"] = name_match.group(1).strip() if name_match else "Unknown"                                              │
+│              metadata["version"] = version_match.group(1).strip() if version_match else "Unknown"                                     │
+│              metadata["description"] = description_match.group(1).strip() if description_match else ""                                │
+│              metadata["dependencies"] = [d.strip() for d in deps_match]                                                               │
+│          else:                                                                                                                        │
+│              # Try importlib.metadata if package is installed                                                                         │
+│              try:                                                                                                                     │
+│                  dist = importlib.metadata.distribution(metadata.get("name", ""))                                                     │
+│                  metadata["name"] = dist.metadata["Name"]                                                                             │
+│                  metadata["version"] = dist.version                                                                                   │
+│                  metadata["description"] = dist.metadata.get("Summary", "")                                                           │
+│                  metadata["dependencies"] = dist.requires or []                                                                       │
+│              except Exception:                                                                                                        │
+│                  metadata["name"] = "Unknown"                                                                                         │
+│                  metadata["version"] = "Unknown"                                                                                      │
+│                  metadata["description"] = ""                                                                                         │
+│                  metadata["dependencies"] = []                                                                                        │
+│                                                                                                                                       │
+│      # Read README.md for short description                                                                                           │
+│      readme = lib_path / "README.md"                                                                                                  │
+│      if readme.is_file():                                                                                                             │
+│          first_para = readme.read_text                                                                                                │
+│                                                                                                                                       │
+│                                                                                                                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────────────────── Tracing Status ────────────────────────────────────────────────────────────╮
+│                                                                                                                                       │
+│  Info: Tracing is disabled.                                                                                                           │
+│                                                                                                                                       │
+│  To enable tracing, do any one of these:                                                                                              │
+│  • Set tracing=True in your Crew/Flow code                                                                                            │
+│  • Set CREWAI_TRACING_ENABLED=true in your project's .env file                                                                        │
+│  • Run: crewai traces enable                                                                                                          │
+│                                                                                                                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Traceback (most recent call last):
+  File "/mnt/c/Users/Thien/Documents/HCMUT/261/ĐACN/test/rpa_code_generate.py", line 100, in RPA_generate_code
+    ast.parse(candidate)
+  File "/usr/lib/python3.10/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    ```python
+    ^
+SyntaxError: invalid syntax
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/Thien/Documents/HCMUT/261/ĐACN/test/main.py", line 66, in <module>
+    main()
+  File "/mnt/c/Users/Thien/Documents/HCMUT/261/ĐACN/test/main.py", line 60, in main
+    generated_code = code_generator.RPA_generate_code()
+  File "/mnt/c/Users/Thien/Documents/HCMUT/261/ĐACN/test/rpa_code_generate.py", line 107, in RPA_generate_code
+    raise ValueError(
+ValueError: Agent không trả về Python code hợp lệ. Lỗi cú pháp ở dòng 1: invalid syntax
+/home/huuthien/.local/lib/python3.10/site-packages/urllib3/poolmanager.py:290: ResourceWarning: unclosed <ssl.SSLSocket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.27.184.146', 39354), raddr=('167.99.24.219', 4319)>
+  self.pools.clear()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
