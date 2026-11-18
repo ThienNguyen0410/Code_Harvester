@@ -1,0 +1,125 @@
+No: 1
+Classification: Good augmentation
+Prompt 1: Open the RPA dashboard and display all workflows created by the current user.
+Prompt 2: Navigate to the RPA dashboard and present the complete collection of workflows associated with the currently authenticated user.
+====================================================================================================
+No: 2
+Classification: Good augmentation
+Prompt 1: Create a new workflow and save it with the name Invoice Processing.
+Prompt 2: Instantiate a new automation workflow and persist it under the designated name Invoice Processing.
+====================================================================================================
+No: 3
+Classification: Good augmentation
+Prompt 1: Run the selected workflow and show its execution status.
+Prompt 2: Initiate the execution of the selected automation workflow and display its corresponding execution status.
+====================================================================================================
+No: 4
+Classification: Good augmentation
+Prompt 1: Search for workflows containing the keyword Payment.
+Prompt 2: Retrieve and display workflows whose names or descriptions contain the specified keyword Payment.
+====================================================================================================
+No: 5
+Classification: Good augmentation
+Prompt 1: Upload a Python script and add it to the function repository.
+Prompt 2: Import a Python script into the RPA platform and register it within the centralized function repository.
+====================================================================================================
+No: 6
+Classification: Bad augmentation
+Prompt 1: Delete the selected workflow from the platform.
+Prompt 2: Preserve the selected workflow and prevent its removal from the platform.
+====================================================================================================
+No: 7
+Classification: Bad augmentation
+Prompt 1: Execute the workflow only when all validation tests pass.
+Prompt 2: Execute the workflow only when at least one validation test fails.
+====================================================================================================
+No: 8
+Classification: Bad augmentation
+Prompt 1: Allow administrators to modify workflow configurations.
+Prompt 2: Restrict administrators from modifying workflow configurations.
+====================================================================================================
+No: 9
+Classification: Bad augmentation
+Prompt 1: Enable automatic workflow execution after deployment.
+Prompt 2: Disable automatic workflow execution after deployment.
+====================================================================================================
+No: 10
+Classification: Bad augmentation
+Prompt 1: Set the workflow status to Active after successful deployment.
+Prompt 2: Set the workflow status to Inactive after successful deployment.
+====================================================================================================
+No: 11
+Classification: Bad augmentation
+Prompt 1: Create a workflow, assign it to the Finance team, and enable execution logging.
+Prompt 2: Create a workflow and assign it to the Finance team.
+====================================================================================================
+No: 12
+Classification: Bad augmentation
+Prompt 1: Upload a Python function, validate its syntax, and store its execution examples.
+Prompt 2: Upload a Python function and validate its syntax.
+====================================================================================================
+No: 13
+Classification: Bad augmentation
+Prompt 1: Display workflow execution history, including timestamps and error messages.
+Prompt 2: Display the execution history of workflows.
+====================================================================================================
+No: 14
+Classification: Bad augmentation
+Prompt 1: Allow users to search, filter, and sort workflows by their creation date.
+Prompt 2: Allow users to search and filter workflows.
+====================================================================================================
+No: 15
+Classification: Bad augmentation
+Prompt 1: Generate a workflow report containing execution time, success rate, and failure details.
+Prompt 2: Generate a workflow report containing execution time and success rate.
+====================================================================================================
+No: 16
+Classification: Good augmentation
+Prompt 1: Display all workflows created by the current user.
+Prompt 2: Display all workflows created by the current user and organize them by their latest modification date.
+====================================================================================================
+No: 17
+Classification: Good augmentation
+Prompt 1: Execute the selected workflow and display its execution status.
+Prompt 2: Execute the selected workflow, display its execution status, and record the execution start timestamp.
+====================================================================================================
+No: 18
+Classification: Good augmentation
+Prompt 1: Allow users to upload Python scripts to the function repository.
+Prompt 2: Allow users to upload Python scripts to the function repository and categorize them according to their functional purpose.
+====================================================================================================
+No: 19
+Classification: Good augmentation
+Prompt 1: Validate the generated Python code before saving it.
+Prompt 2: Validate the generated Python code before saving it and provide detailed validation feedback to the user.
+====================================================================================================
+No: 20
+Classification: Good augmentation
+Prompt 1: Allow administrators to manage user permissions.
+Prompt 2: Allow administrators to manage user permissions and review the permission modification history.
+====================================================================================================
+No: 21
+Classification: Good augmentation
+Prompt 1: Create an automation workflow that extracts customer information from a web application and saves it to a CSV file.
+Prompt 2: Develop an automated workflow to retrieve customer information from a web-based application and persist the extracted records in CSV format.
+====================================================================================================
+No: 22
+Classification: Bad augmentation
+Prompt 1: Allow users to execute multiple workflows simultaneously.
+Prompt 2: Restrict users to executing only one workflow at a time.
+====================================================================================================
+No: 23
+Classification: Bad augmentation
+Prompt 1: Configure an automation bot, assign it to a specific workflow, and schedule its execution every morning.
+Prompt 2: Configure an automation bot and assign it to a specific workflow.
+====================================================================================================
+No: 24
+Classification: Good augmentation
+Prompt 1: Display the execution logs of an automation workflow.
+Prompt 2: Display the execution logs of an automation workflow and allow users to export them as downloadable text files.
+====================================================================================================
+No: 25
+Classification: Good augmentation
+Prompt 1: Allow users to create reusable automation functions.
+Prompt 2: Allow users to create reusable automation functions and document their input parameters and expected return values.
+====================================================================================================

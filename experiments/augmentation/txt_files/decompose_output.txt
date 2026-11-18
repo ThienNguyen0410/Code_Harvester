@@ -1,0 +1,1188 @@
+================================================================================
+PROMPT ID: A001
+================================================================================
+ORIGINAL PROMPT:
+Click the “Login” button.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Click the “Login” button.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Click the “Login” button.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A002
+================================================================================
+ORIGINAL PROMPT:
+Enter “automation@example.com” into the Email field.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Enter “automation@example.com” into the Email field.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Enter “automation@example.com” into the Email field.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A003
+================================================================================
+ORIGINAL PROMPT:
+Enter “Auto@123” into the Password field.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Enter “Auto@123” into the Password field.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Enter “Auto@123” into the Password field.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A004
+================================================================================
+ORIGINAL PROMPT:
+Select “Vietnam” from the Country dropdown menu.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Select “Vietnam” from the Country dropdown menu.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Select “Vietnam” from the Country dropdown menu.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A005
+================================================================================
+ORIGINAL PROMPT:
+Check the “Remember me” checkbox.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Check the “Remember me” checkbox.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Check the “Remember me” checkbox.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A006
+================================================================================
+ORIGINAL PROMPT:
+Uncheck the “Subscribe to newsletter” checkbox.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Uncheck the “Subscribe to newsletter” checkbox.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Uncheck the “Subscribe to newsletter” checkbox.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A007
+================================================================================
+ORIGINAL PROMPT:
+Type “INV-2026-015” into the Invoice Number search field.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Type “INV-2026-015” into the Invoice Number search field.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Type “INV-2026-015” into the Invoice Number search field.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A008
+================================================================================
+ORIGINAL PROMPT:
+Press the Enter key.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Press the Enter key.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Press the Enter key.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A009
+================================================================================
+ORIGINAL PROMPT:
+Wait for the page to finish loading.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Wait for the page to finish loading.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Wait for the page to finish loading.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A010
+================================================================================
+ORIGINAL PROMPT:
+Scroll down to the bottom of the page.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Scroll down to the bottom of the page.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Scroll down to the bottom of the page.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A011
+================================================================================
+ORIGINAL PROMPT:
+Open the “Settings” menu.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Open the “Settings” menu.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Open the “Settings” menu.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A012
+================================================================================
+ORIGINAL PROMPT:
+Navigate to the “Customers” page.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Navigate to the “Customers” page.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Navigate to the “Customers” page.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A013
+================================================================================
+ORIGINAL PROMPT:
+Download the currently displayed invoice.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Download the currently displayed invoice.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Download the currently displayed invoice.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A014
+================================================================================
+ORIGINAL PROMPT:
+Upload the file “monthly_report.xlsx” using the attachment
+control.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Upload the file “monthly_report.xlsx” using the attachment control.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Upload the file “monthly_report.xlsx” using the attachment control.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A015
+================================================================================
+ORIGINAL PROMPT:
+Capture a screenshot of the current browser window.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Capture a screenshot of the current browser window.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Capture a screenshot of the current browser window.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A016
+================================================================================
+ORIGINAL PROMPT:
+Extract the text displayed in the page heading.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Extract the text displayed in the page heading.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Extract the text displayed in the page heading.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A017
+================================================================================
+ORIGINAL PROMPT:
+Read the value in the “Total Amount” field.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "{\n    \"Original_requirement\": \"Read the value in the “Total Amount” field.\",\n    \"Sub_requirements_list\": [\n        {\n            \"id\": \"SR-001\",\n            \"content\": \"Read the value in the “Total Amount” field.\",\n            \"isAtomic\": null\n        }\n    ]\n}",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Read the value in the “Total Amount” field.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A018
+================================================================================
+ORIGINAL PROMPT:
+Copy the selected text to the clipboard.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Copy the selected text to the clipboard.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Copy the selected text to the clipboard.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A019
+================================================================================
+ORIGINAL PROMPT:
+Paste the clipboard contents into the Notes field.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Paste the clipboard contents into the Notes field.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Paste the clipboard contents into the Notes field.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A020
+================================================================================
+ORIGINAL PROMPT:
+Close the active browser tab.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Close the active browser tab.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Close the active browser tab.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A021
+================================================================================
+ORIGINAL PROMPT:
+Refresh the current webpage.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Refresh the current webpage.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Refresh the current webpage.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A022
+================================================================================
+ORIGINAL PROMPT:
+Move the mouse pointer over the “Reports” menu item.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Move the mouse pointer over the “Reports” menu item.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Move the mouse pointer over the “Reports” menu item.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A023
+================================================================================
+ORIGINAL PROMPT:
+Select the “Descending” option in the Sort Order dropdown.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Select the “Descending” option in the Sort Order dropdown.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Select the “Descending” option in the Sort Order dropdown.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A024
+================================================================================
+ORIGINAL PROMPT:
+Save the current document.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Save the current document.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Save the current document.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: A025
+================================================================================
+ORIGINAL PROMPT:
+Log out of the application.
+
+============================================================ NON-ATOMIC
+PROMPTS (N001-N025) Each prompt contains multiple actions, dependencies,
+conditions, iterations, or a broader workflow rather than one atomic
+action. ============================================================
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Log out of the application.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Log out of the application.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N001
+================================================================================
+ORIGINAL PROMPT:
+Open the Gmail application, sign in using the provided
+credentials, and navigate to the Inbox.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Open the Gmail application, sign in using the provided credentials, and navigate to the Inbox.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Open the Gmail application.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "Sign in using the provided credentials.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-003",
+            "content": "Navigate to the Inbox.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N002
+================================================================================
+ORIGINAL PROMPT:
+Search the Customers page for “Nguyen Van An”, open
+the matching record, and retrieve the customer’s phone number.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Search the Customers page for “Nguyen Van An”, open the matching record, and retrieve the customer’s phone number.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Search the Customers page for “Nguyen Van An”, open the matching record, and retrieve the customer’s phone number.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N003
+================================================================================
+ORIGINAL PROMPT:
+Open the invoice list, filter invoices by the current
+month, and download every matching invoice.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Open the invoice list, filter invoices by the current month, and download every matching invoice.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Open the invoice list.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "Filter invoices by the current month.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-003",
+            "content": "Download every matching invoice.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N004
+================================================================================
+ORIGINAL PROMPT:
+For each unread email, extract the sender address,
+subject, and invoice amount from the email body.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "For each unread email, extract the sender address, subject, and invoice amount from the email body.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "For each unread email, extract the sender address, subject, and invoice amount from the email body.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N005
+================================================================================
+ORIGINAL PROMPT:
+If the invoice amount is greater than $1,000, mark the
+email as important; otherwise, archive it.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "If the invoice amount is greater than $1,000, mark the email as important; otherwise, archive it.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "If the invoice amount is greater than $1,000, mark the email as important; otherwise, archive it.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N006
+================================================================================
+ORIGINAL PROMPT:
+Create a new customer record using the provided name,
+email address, phone number, and billing address, then save the record.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Create a new customer record using the provided name, email address, phone number, and billing address, then save the record.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Create a new customer record using the provided name, email address, phone number, and billing address.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "Save the created customer record.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N007
+================================================================================
+ORIGINAL PROMPT:
+Navigate to the Orders page, find order “ORD-1058”,
+change its status to “Shipped”, and confirm the update.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Navigate to the Orders page, find order “ORD-1058”, change its status to “Shipped”, and confirm the update.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Navigate to the Orders page, locate order “ORD-1058”, change its status to “Shipped”, and confirm the update.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N008
+================================================================================
+ORIGINAL PROMPT:
+Log in to the HR portal, open the employee directory,
+and export the employee list as a CSV file.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Log in to the HR portal, open the employee directory, and export the employee list as a CSV file.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Log in to the HR portal.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "Open the employee directory.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-003",
+            "content": "Export the employee list as a CSV file.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N009
+================================================================================
+ORIGINAL PROMPT:
+Visit the supplier website, search for each product in
+the spreadsheet, and record its displayed price in the corresponding
+row.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Visit the supplier website, search for each product in the spreadsheet, and record its displayed price in the corresponding row.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Access the supplier website.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "Search for each product listed in the spreadsheet on the supplier website.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-003",
+            "content": "Record the displayed price of each product in the corresponding row of the spreadsheet.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N010
+================================================================================
+ORIGINAL PROMPT:
+Open the downloaded PDF, extract the invoice number
+and total amount, and append both values to the finance spreadsheet.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Open the downloaded PDF, extract the invoice number and total amount, and append both values to the finance spreadsheet.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Open the downloaded PDF.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "Extract the invoice number and total amount from the opened PDF.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-003",
+            "content": "Append the extracted invoice number and total amount to the finance spreadsheet.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N011
+================================================================================
+ORIGINAL PROMPT:
+Check every row in the spreadsheet and send an email
+to the contact listed in any row whose payment status is “Overdue”.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Check every row in the spreadsheet and send an email to the contact listed in any row whose payment status is “Overdue”.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Iterate over each row in the spreadsheet to evaluate the payment status.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "When a row's payment status is “Overdue”, send an email to the contact listed in that row.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N012
+================================================================================
+ORIGINAL PROMPT:
+Open the task management application, create a task
+titled “Prepare monthly report”, assign it to “Alex”, and set its due
+date to November 30, 2026.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Open the task management application, create a task titled \"Prepare monthly report\", assign it to \"Alex\", and set its due date to November 30, 2026.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Open the task management application",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "Create a task titled \"Prepare monthly report\", assign it to \"Alex\", and set its due date to November 30, 2026",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N013
+================================================================================
+ORIGINAL PROMPT:
+Search the product catalog for “wireless mouse”,
+compare the prices of the first five results, and add the cheapest item
+to the cart.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Search the product catalog for “wireless mouse”, compare the prices of the first five results, and add the cheapest item to the cart.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Search the product catalog for “wireless mouse” and retrieve the first five results.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "Compare the prices of the first five results and add the cheapest item to the cart.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N014
+================================================================================
+ORIGINAL PROMPT:
+For each customer record, check whether the email
+address is missing; if it is, add the customer ID to a separate report.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "For each customer record, check whether the email address is missing; if it is, add the customer ID to a separate report.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "For each customer record, check whether the email address is missing.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "If the email address is missing, add the customer ID to a separate report.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N015
+================================================================================
+ORIGINAL PROMPT:
+Open the support dashboard, retrieve all tickets with
+“High” priority, and generate a summary containing each ticket ID and
+subject.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Open the support dashboard, retrieve all tickets with “High” priority, and generate a summary containing each ticket ID and subject.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Open the support dashboard.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "Retrieve all tickets with “High” priority.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-003",
+            "content": "Generate a summary containing each ticket ID and subject.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N016
+================================================================================
+ORIGINAL PROMPT:
+Sign in to the banking portal, open the transaction
+history, filter transactions from the previous month, and export the
+results to Excel.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Sign in to the banking portal, open the transaction history, filter transactions from the previous month, and export the results to Excel.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Sign in to the banking portal.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "Open the transaction history.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-003",
+            "content": "Filter transactions from the previous month.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-004",
+            "content": "Export the results to Excel.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N017
+================================================================================
+ORIGINAL PROMPT:
+Read the names and email addresses from the input
+spreadsheet, search for each person in the CRM, and update the
+corresponding contact record.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Read the names and email addresses from the input spreadsheet, search for each person in the CRM, and update the corresponding contact record.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Read the names and email addresses from the input spreadsheet.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "Search for each person in the CRM.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-003",
+            "content": "Update the corresponding contact record.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N018
+================================================================================
+ORIGINAL PROMPT:
+Open the registration page, complete the form using
+the supplied information, submit it, and report whether registration was
+successful.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "{\n    \"Original_requirement\": \"Open the registration page, complete the form using the supplied information, submit it, and report whether registration was successful.\",\n    \"Sub_requirements_list\": [\n        {\n            \"id\": \"SR-001\",\n            \"content\": \"Open the registration page, complete the form using the supplied information, submit it, and report whether registration was successful.\",\n            \"isAtomic\": null\n        }\n    ]\n}",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Open the registration page, complete the form using the supplied information, submit it, and report whether registration was successful.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N019
+================================================================================
+ORIGINAL PROMPT:
+Navigate to the inventory page and inspect each
+product; when its stock quantity is below 10, create a replenishment
+request for that product.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Navigate to the inventory page and inspect each product; when its stock quantity is below 10, create a replenishment request for that product.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Navigate to the inventory page.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "Inspect each product on the inventory page.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-003",
+            "content": "When a product's stock quantity is below 10, create a replenishment request for that product.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N020
+================================================================================
+ORIGINAL PROMPT:
+Open the latest monthly sales report, calculate the
+total revenue for each region, and save the results in a new worksheet.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Open the latest monthly sales report, calculate the total revenue for each region, and save the results in a new worksheet.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Open the latest monthly sales report.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "Calculate the total revenue for each region.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-003",
+            "content": "Save the results in a new worksheet.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N021
+================================================================================
+ORIGINAL PROMPT:
+Search the email inbox for messages containing the
+phrase “payment confirmation”, download their attachments, and move
+those emails to the “Processed” folder.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Search the email inbox for messages containing the phrase “payment confirmation”, download their attachments, and move those emails to the “Processed” folder.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Search the email inbox for messages containing the phrase “payment confirmation”.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "Download the attachments of the messages containing the phrase “payment confirmation”.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-003",
+            "content": "Move those emails to the “Processed” folder.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N022
+================================================================================
+ORIGINAL PROMPT:
+Log in to the project management system, open the
+current sprint, identify tasks that are past their due dates, and notify
+their assignees.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Log in to the project management system, open the current sprint, identify tasks that are past their due dates, and notify their assignees.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Log in to the project management system.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "Open the current sprint.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-003",
+            "content": "Identify tasks that are past their due dates within the current sprint.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-004",
+            "content": "Notify the assignees of the identified overdue tasks.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N023
+================================================================================
+ORIGINAL PROMPT:
+Open the web form and submit it with the available
+customer information. If a required field is missing, determine an
+appropriate value and continue.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Open the web form and submit it with the available customer information. If a required field is missing, determine an appropriate value and continue.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Open the web form.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "Submit the web form with the available customer information.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-003",
+            "content": "If a required field is missing, determine an appropriate value and continue.",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N024
+================================================================================
+ORIGINAL PROMPT:
+Retrieve the required information from the page,
+organize it into a spreadsheet, and email the spreadsheet to the
+manager.
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Retrieve the required information from the page, organize it into a spreadsheet, and email the spreadsheet to the manager.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Retrieve the required information from the page",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "Organize the retrieved information into a spreadsheet",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-003",
+            "content": "Email the spreadsheet to the manager",
+            "isAtomic": "Yes"
+        }
+    ]
+}
+
+
+================================================================================
+PROMPT ID: N025
+================================================================================
+ORIGINAL PROMPT:
+Open the travel booking website, search for flights
+from Ho Chi Minh City to Singapore for next Friday, compare the
+available options, and book the cheapest flight that meets the company’s
+travel policy.
+
+============================================================ END OF
+DATASET ============================================================
+
+EVALUATION OUTPUT:
+{
+    "Original_requirement": "Open the travel booking website, search for flights from Ho Chi Minh City to Singapore for next Friday, compare the available options, and book the cheapest flight that meets the company’s travel policy.",
+    "Sub_requirements_list": [
+        {
+            "id": "SR-001",
+            "content": "Open the travel booking website.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-002",
+            "content": "Search for flights from Ho Chi Minh City to Singapore for next Friday.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-003",
+            "content": "Compare the available flight options.",
+            "isAtomic": "Yes"
+        },
+        {
+            "id": "SR-004",
+            "content": "Book the cheapest flight that meets the company’s travel policy.",
+            "isAtomic": "No"
+        }
+    ]
+}
+
+

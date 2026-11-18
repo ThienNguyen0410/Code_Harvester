@@ -72,7 +72,7 @@ class RPA_Code_Generate:
                 "Just Use the available methods which are defined in\n"
                 f"{self._get_sample_code()}\n"
                 "In case there are methods which were not available. You need to generate that methods by using functions in ranking table as references\n"
-                "Do not import the libraries which were imported before\n"
+                "Do not import the libraries which were imported\n"
                 "Follow the standard above: create a valid Python function, use the "
                 "appropriate @keyword(...) decorator, and include a comment or "
                 f"docstring stating the code generation date ({date.today().isoformat()}) "

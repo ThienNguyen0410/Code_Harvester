@@ -16,13 +16,10 @@ class Library:
         return self.borrow
 
 
-
-from robot.api.deco import keyword
-
-@keyword("summarize-library")
-def summarize_library(library):
-    # Generated 2026-10-21: Summarize library stats: total books, available books, borrowed books.
+@keyword("summarize-inventory")
+def summarize_inventory(library):
+    # Generated on 2026-10-22: Summarize library inventory counts.
     total = len(library.books)
     available = library.available_book()
     borrowed = library.borrowed_book()
-    return {"total_books": total, "available_books": available, "borrowed_books": borrowed}
+    return {"total": total, "available": available, "borrowed": borrowed}

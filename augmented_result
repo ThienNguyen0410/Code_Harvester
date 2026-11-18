@@ -1,0 +1,46 @@
+huuthien@LAPTOP-FKBM2QC4:/mnt/c/Users/Thien/Documents/HCMUT/261/ĐACN/demo_tool$ python3 test_augmented.py 
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 3258.36it/s]
+enter : 0.4709834158420563
+approach : 0.3358238637447357
+reach : 0.4599919617176056
+gain entry : 0.37804022431373596
+retrieve : 0.4651194214820862
+obtain : 0.48061516880989075
+use : 0.47867071628570557
+utilize : 0.5669268369674683
+visit : 0.47812893986701965
+open : 0.4547664225101471
+connect : 0.47167104482650757
+log in : 0.5193760991096497
+get into : 0.5186865329742432
+sign in : 0.4888342022895813
+get access to : 0.8442491292953491
+browse : 0.4796985685825348
+interact with : 0.3668995201587677
+consult : 0.33193907141685486
+tap into : 0.4043442904949188
+make use of : 0.3755702078342438
+huuthien@LAPTOP-FKBM2QC4:/mnt/c/Users/Thien/Documents/HCMUT/261/ĐACN/demo_tool$ python3 test_augmented.py 
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 3885.01it/s]
+denial : 0.2223229557275772
+restriction : 0.38196516036987305
+prohibition : 0.22839246690273285
+exclusion : 0.24524441361427307
+inaccessibility : 0.24224668741226196
+disconnection : 0.3447106182575226
+rejection : 0.17353500425815582
+blocking : 0.3250257670879364
+obstruction : 0.29032090306282043
+barrier : 0.3527096211910248
+design : 0.34005850553512573
+develop : 0.3028084337711334
+calculate : 0.2170671969652176
+purchase : 0.40541496872901917
+download : 0.39788347482681274
+upload : 0.3568684160709381
+edit : 0.35982444882392883
+delete : 0.3347380757331848
+print : 0.27827176451683044
+subscribe : 0.2619610130786896

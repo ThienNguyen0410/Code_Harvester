@@ -1,0 +1,50 @@
+No: 1
+Classification: Good augmentation
+Prompt 1: Open the employee management website, navigate to the employee directory, retrieve the complete list of employees currently registered in the system, and display their full names, email addresses, and department information in a structured table.
+Prompt 2: Access the employee management portal, locate the employee directory section, collect all employees currently stored in the application, and present their full names, email addresses, and corresponding department details using a well-organized tabular format.
+====================================================================================================
+No: 2
+Classification: Bad augmentation
+Prompt 1: Visit the online shopping platform, search for a product named Wireless Mouse, inspect the first product returned by the search results, and extract its name, displayed price, and availability status without interacting with the shopping cart.
+Prompt 2: Navigate to the e-commerce website, perform a search using Wireless Mouse as the product keyword, examine the first matching result, and retrieve its product name, listed price, and stock availability while leaving the shopping cart unchanged.
+====================================================================================================
+No: 3
+Classification: Good augmentation
+Prompt 1: Log in to the project management application using the provided account credentials, open the tasks assigned to the currently authenticated user, filter the tasks whose status is In Progress, and export their titles and due dates into a CSV file.
+Prompt 2: Access the project management platform with the supplied login credentials, identify all tasks belonging to the active user, retain only those marked In Progress, and save their corresponding titles and deadlines as a CSV document.
+====================================================================================================
+No: 4
+Classification: Bad augmentation
+Prompt 1: Open the online banking dashboard, navigate to the transaction history, identify all transactions with an amount greater than 500 dollars, and export the matching transaction records into an Excel spreadsheet for subsequent financial analysis.
+Prompt 2: Open the online banking dashboard, navigate to the transaction history, identify all transactions with an amount less than 500 dollars, and export the matching transaction records into an Excel spreadsheet for subsequent financial analysis.
+====================================================================================================
+No: 5
+Classification: Bad augmentation
+Prompt 1: Access the inventory management system, locate the product identified by SKU A1025, increase its available stock quantity by 20 units, and save the updated inventory information after confirming that the product exists in the system.
+Prompt 2: Access the inventory management system, locate the product identified by SKU A1025, decrease its available stock quantity by 20 units, and save the updated inventory information after confirming that the product exists in the system.
+====================================================================================================
+No: 6
+Classification: Bad augmentation
+Prompt 1: Open the customer support platform, locate the support ticket with identifier TK2026, retrieve its current status and latest response, and send a notification containing these details to the customer associated with that ticket.
+Prompt 2: Open the customer support platform, locate the support ticket with identifier TK2026, retrieve its current status and latest response, and send a notification containing these details to the support administrator responsible for that ticket.
+====================================================================================================
+No: 7
+Classification: Bad augmentation
+Prompt 1: Navigate to the recruitment management portal, open the candidate directory, search for candidates applying for the Software Engineer position, retrieve their names and email addresses, and generate a CSV report containing the matching candidate information.
+Prompt 2: Navigate to the recruitment management portal, open the candidate directory, search for candidates applying for the Software Engineer position, and retrieve their names and email addresses for further recruitment activities.
+====================================================================================================
+No: 8
+Classification: Bad augmentation
+Prompt 1: Open the content management system, locate the article titled Product Launch Announcement, update its publication status to Published, verify that the status change has been successfully saved, and capture a screenshot of the updated article information for documentation purposes.
+Prompt 2: Open the content management system, locate the article titled Product Launch Announcement, update its publication status to Published, and verify that the status change has been successfully saved.
+====================================================================================================
+No: 9
+Classification: Good augmentation
+Prompt 1: Open the employee management application, navigate to the attendance records, filter the records belonging to the current month, retrieve employee names and their corresponding check-in times, and export the filtered results into an Excel spreadsheet.
+Prompt 2: Open the employee management application, navigate to the attendance records, filter the records belonging to the current month, retrieve employee names and their corresponding check-in times, export the filtered results into an Excel spreadsheet, and send an email notification containing the exported report to the human resources department.
+====================================================================================================
+No: 10
+Classification: Good augmentation
+Prompt 1: Visit the project tracking website, open the current sprint dashboard, retrieve all tasks assigned to the development team, identify their titles and current statuses, and display the collected information in a structured table for the project manager.
+Prompt 2: Visit the project tracking website, open the current sprint dashboard, retrieve all tasks assigned to the development team, identify their titles and current statuses, display the collected information in a structured table for the project manager, and calculate the percentage of tasks that have already been completed during the current sprint.
+====================================================================================================

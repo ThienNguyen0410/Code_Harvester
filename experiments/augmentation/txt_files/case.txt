@@ -1,0 +1,96 @@
+# RPA Prompt Completeness Dataset
+# 100 prompts: 50 Fully Specified, 50 Insufficiently Specified
+# Format: one prompt per line, tab-separated ID and label and prompt
+# UTF-8 text file
+
+ID	LABEL	PROMPT
+P011	FULLY_SPECIFIED	Copy the value from the Username field into the Account Name field.
+P012	FULLY_SPECIFIED	Calculate the sum of 120, 250, and 300, then store the result as "total_amount".
+P013	FULLY_SPECIFIED	Convert the text "hello world" to uppercase and store it as "formatted_text".
+P014	FULLY_SPECIFIED	Calculate the average of 10, 20, and 30, then save it as "average_score".
+P015	FULLY_SPECIFIED	Remove all spaces from the string "Hello World" and store the result as "clean_text".
+P016	FULLY_SPECIFIED	Check whether the value of "age" is greater than or equal to 18.
+P017	FULLY_SPECIFIED	Verify that the email address "john@example.com" contains the domain "example.com".
+P018	FULLY_SPECIFIED	Check whether the "Username" field is empty before submitting the form.
+P019	FULLY_SPECIFIED	Validate that the order total is greater than 0.
+P020	FULLY_SPECIFIED	Compare the values of "actual_price" and "expected_price" for equality.
+P021	FULLY_SPECIFIED	If the order total is greater than 100, apply the "Premium" discount category; otherwise, apply the "Standard" category.
+P022	FULLY_SPECIFIED	If the account status is "Active", click the Enable button; otherwise, click the Disable button.
+P023	FULLY_SPECIFIED	If the file size exceeds 10 MB, reject the upload; otherwise, continue uploading.
+P024	FULLY_SPECIFIED	If the payment status is "Paid", update the order status to "Completed"; otherwise, keep it unchanged.
+P025	FULLY_SPECIFIED	If the stock quantity is 0, display "Out of stock"; otherwise, display "Available".
+P026	FULLY_SPECIFIED	Save the text "Order completed" into the file "status.txt".
+P027	FULLY_SPECIFIED	Insert the record {"name":"John","age":25} into the Customers table.
+P028	FULLY_SPECIFIED	Update the "status" column to "Approved" for the record with ID 1001 in the Orders table.
+P029	FULLY_SPECIFIED	Delete the record with ID 500 from the Employees table.
+P030	FULLY_SPECIFIED	Append the text "Task completed" to the file "log.txt".
+P031	FULLY_SPECIFIED	Send an email to "manager@example.com" with the subject "Daily Report" and the content "The report is ready.".
+P032	FULLY_SPECIFIED	Send the message "Your order has been shipped." to "+84901234567" through SMS.
+P033	FULLY_SPECIFIED	Post the content "The meeting starts at 9 AM." to the Slack channel "#announcements".
+P034	FULLY_SPECIFIED	Send a notification with the title "Payment Successful" and content "Your payment has been processed." to user ID "U102".
+P035	FULLY_SPECIFIED	Send an email to "support@example.com" with the subject "Technical Issue" and the content "I cannot access my account.".
+P036	FULLY_SPECIFIED	Wait for 5 seconds before continuing the workflow.
+P037	FULLY_SPECIFIED	Wait until the element with ID "loading-spinner" disappears.
+P038	FULLY_SPECIFIED	Wait until the URL changes to "https://example.com/dashboard".
+P039	FULLY_SPECIFIED	Wait until the text "Payment successful" appears on the page.
+P040	FULLY_SPECIFIED	Wait for the file "report.xlsx" to appear in the Downloads folder.
+P041	FULLY_SPECIFIED	If the login operation fails, retry it up to 3 times with a 2-second interval between attempts.
+P042	FULLY_SPECIFIED	If the file upload fails, display the error message "Upload failed" and stop the workflow.
+P043	FULLY_SPECIFIED	If the API returns HTTP status 500, retry the request 2 times.
+P044	FULLY_SPECIFIED	If the database connection fails, use the backup database connection.
+P045	FULLY_SPECIFIED	If the payment operation times out, cancel the transaction and log the error message.
+P046	FULLY_SPECIFIED	Click the Login button on the login page.
+P047	FULLY_SPECIFIED	Retrieve the value of the "Customer ID" column from the first row of the Customers table.
+P048	FULLY_SPECIFIED	Calculate the difference between 500 and 175, then store it as "remaining_balance".
+P049	FULLY_SPECIFIED	Check whether the password length is at least 8 characters.
+P050	FULLY_SPECIFIED	Save the JSON object {"order_id":1001,"status":"completed"} to "order.json".
+P051	INSUFFICIENTLY_SPECIFIED	Click the button.
+P052	INSUFFICIENTLY_SPECIFIED	Select an option from the dropdown menu.
+P053	INSUFFICIENTLY_SPECIFIED	Enter the username into the form.
+P054	INSUFFICIENTLY_SPECIFIED	Press the appropriate key to continue.
+P055	INSUFFICIENTLY_SPECIFIED	Retrieve the required information from the page.
+P056	INSUFFICIENTLY_SPECIFIED	Extract the data from the table.
+P057	INSUFFICIENTLY_SPECIFIED	Read the relevant field from the website.
+P058	INSUFFICIENTLY_SPECIFIED	Retrieve the latest records from the database.
+P059	INSUFFICIENTLY_SPECIFIED	Enter the required information into the input field.
+P060	INSUFFICIENTLY_SPECIFIED	Upload the document to the system.
+P061	INSUFFICIENTLY_SPECIFIED	Copy the value into the destination field.
+P062	INSUFFICIENTLY_SPECIFIED	Calculate the total amount.
+P063	INSUFFICIENTLY_SPECIFIED	Convert the text into the appropriate format.
+P064	INSUFFICIENTLY_SPECIFIED	Calculate the average score.
+P065	INSUFFICIENTLY_SPECIFIED	Clean the input string.
+P066	INSUFFICIENTLY_SPECIFIED	Check whether the value is valid.
+P067	INSUFFICIENTLY_SPECIFIED	Verify that the email address is correct.
+P068	INSUFFICIENTLY_SPECIFIED	Check whether the required field is empty.
+P069	INSUFFICIENTLY_SPECIFIED	Validate the order information.
+P070	INSUFFICIENTLY_SPECIFIED	Compare the two values.
+P071	INSUFFICIENTLY_SPECIFIED	If the order is eligible, apply the discount.
+P072	INSUFFICIENTLY_SPECIFIED	Check the account status and perform the appropriate action.
+P073	INSUFFICIENTLY_SPECIFIED	Reject files that are too large.
+P074	INSUFFICIENTLY_SPECIFIED	If the payment is successful, update the order.
+P075	INSUFFICIENTLY_SPECIFIED	Display the appropriate stock status.
+P076	INSUFFICIENTLY_SPECIFIED	Save the result to a file.
+P077	INSUFFICIENTLY_SPECIFIED	Insert the customer information into the database.
+P078	INSUFFICIENTLY_SPECIFIED	Update the order status.
+P079	INSUFFICIENTLY_SPECIFIED	Delete the unnecessary records.
+P080	INSUFFICIENTLY_SPECIFIED	Append the execution result to the log file.
+P081	INSUFFICIENTLY_SPECIFIED	Send an email to the manager.
+P082	INSUFFICIENTLY_SPECIFIED	Send the message to the customer.
+P083	INSUFFICIENTLY_SPECIFIED	Post an announcement to the team.
+P084	INSUFFICIENTLY_SPECIFIED	Notify the user about the transaction.
+P085	INSUFFICIENTLY_SPECIFIED	Send a notification to the support team.
+P086	INSUFFICIENTLY_SPECIFIED	Wait for a while before continuing.
+P087	INSUFFICIENTLY_SPECIFIED	Wait until the page is ready.
+P088	INSUFFICIENTLY_SPECIFIED	Wait until the operation is completed.
+P089	INSUFFICIENTLY_SPECIFIED	Wait for the expected result to appear.
+P090	INSUFFICIENTLY_SPECIFIED	Wait until the required file is available.
+P091	INSUFFICIENTLY_SPECIFIED	If the operation fails, try again.
+P092	INSUFFICIENTLY_SPECIFIED	Handle the error and continue the workflow.
+P093	INSUFFICIENTLY_SPECIFIED	Retry the request when necessary.
+P094	INSUFFICIENTLY_SPECIFIED	Use another connection if the current one fails.
+P095	INSUFFICIENTLY_SPECIFIED	Handle the timeout appropriately.
+P096	INSUFFICIENTLY_SPECIFIED	Click the confirmation button after completing the operation.
+P097	INSUFFICIENTLY_SPECIFIED	Retrieve the customer information from the system.
+P098	INSUFFICIENTLY_SPECIFIED	Calculate the final payment amount and save it.
+P099	INSUFFICIENTLY_SPECIFIED	Check the input data before processing it.
+P100	INSUFFICIENTLY_SPECIFIED	Store the processed information in the appropriate location.

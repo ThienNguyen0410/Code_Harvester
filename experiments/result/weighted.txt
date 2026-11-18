@@ -1,0 +1,60 @@
+
+
+
+weight = 0.3
+
+
+weight = 0.35
+{'def add(a, b):\n    return a + b : 0.3224053680896759'}
+{'def sum(a,b):\n    return a + b : 0.3766443133354187'}
+{'def cal_sum(a,b):\n    return a - b : 0.29352709650993347'}
+{'def get_sum(a,b):\n    sum = a + b\n    return sum : 0.4381101429462433'}
+{'def calculate_total(number1, number2):\n    result = number1 + number2\n    return result : 0.4873896539211273'}
+{'def addition(x, y):\n    return sum([x, y]) : 0.3597017824649811'}
+{'def calculate_sum(a, b):\n    return a - b : 0.31433433294296265'}
+{'def compute_sum(a, b):\n    return a * b : 0.3100093603134155'}
+{'def add_numbers(numbers):\n    return numbers[0] + numbers[1] : 0.43532007932662964'}
+{'def calculate_average(a, b):\n    total = a + b\n    return total / 2 : 0.39001354575157166'}
+
+weight = 0.4
+
+{'Signature: def add(a, b)', 'Body: \n    return a + b'}
+{'Signature: def sum(a,b)', 'Body: \n    return a + b'}
+{'Body: \n    return a - b', 'Signature: def cal_sum(a,b)'}
+{'Signature: def get_sum(a,b)', 'Body: \n    sum = a + b\n    return sum'}
+{'def add(a, b):\n    return a + b : 0.3166779577732086'}
+{'def sum(a,b):\n    return a + b : 0.37866532802581787'}
+{'def cal_sum(a,b):\n    return a - b : 0.30241984128952026'}
+{'def get_sum(a,b):\n    sum = a + b\n    return sum : 0.43496114015579224'}
+
+weighted = 0.5
+result:
+{'def add(a, b):\n    return a + b : 0.30522313714027405'}
+{'def sum(a,b):\n    return a + b : 0.3827073574066162'}
+{'def cal_sum(a,b):\n    return a - b : 0.3202052414417267'}
+{'def get_sum(a,b):\n    sum = a + b\n    return sum : 0.4286630153656006'}
+
+
+weight = 0.55
+
+Loading weights: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 3320.27it/s]
+{'Body: \n    return a + b', 'Signature: def add(a, b)'}
+{'Signature: def sum(a,b)', 'Body: \n    return a + b'}
+{'Signature: def cal_sum(a,b)', 'Body: \n    return a - b'}
+{'Body: \n    sum = a + b\n    return sum', 'Signature: def get_sum(a,b)'}
+{'def add(a, b):\n    return a + b : 0.29949575662612915'}
+{'def sum(a,b):\n    return a + b : 0.3847283720970154'}
+{'def cal_sum(a,b):\n    return a - b : 0.3290979564189911'}
+{'def get_sum(a,b):\n    sum = a + b\n    return sum : 0.4255139231681824'}
+
+
+weight = 0.6
+{'Body: \n    return a + b', 'Signature: def add(a, b)'}
+{'Signature: def sum(a,b)', 'Body: \n    return a + b'}
+{'Signature: def cal_sum(a,b)', 'Body: \n    return a - b'}
+{'Body: \n    sum = a + b\n    return sum', 'Signature: def get_sum(a,b)'}
+{'def add(a, b):\n    return a + b : 0.29376834630966187'}
+{'def sum(a,b):\n    return a + b : 0.38674938678741455'}
+{'def cal_sum(a,b):\n    return a - b : 0.3379906713962555'}
+{'def get_sum(a,b):\n    sum = a + b\n    return sum : 0.42236489057540894'}
+

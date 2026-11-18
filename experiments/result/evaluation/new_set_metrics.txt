@@ -1,0 +1,120 @@
+No: 1
+Prompt: Open the RPA dashboard, navigate to the Workflow Management page, and display all workflows created by the currently authenticated user.
+Conclusion: Enough information
+====================================================================================================
+No: 2
+Prompt: Create a new automation workflow named Invoice Processing and save it to the My Workflows collection.
+Conclusion: Lack of information
+====================================================================================================
+No: 3
+Prompt: Search for workflows whose names contain the keyword Payment and display the matching results.
+Conclusion: Lack of information
+====================================================================================================
+No: 4
+Prompt: Upload the file invoice_processor.py from the local Downloads folder to the Function Repository and register it under the category Data Processing.
+Conclusion: Lack of information
+====================================================================================================
+No: 5
+Prompt: Execute the workflow named Daily Report Generation and display its final execution status after the process finishes.
+Conclusion: Lack of information
+====================================================================================================
+No: 6
+Prompt: Configure the Invoice Processing workflow to execute automatically every day at 08:00 AM.
+Conclusion: Lack of information
+====================================================================================================
+No: 7
+Prompt: Open the Execution History page and filter execution records to display only workflows with the status Failed.
+Conclusion: Lack of information
+====================================================================================================
+No: 8
+Prompt: Export the execution logs of the workflow named Customer Synchronization as a CSV file and save the exported file to the local Downloads folder.
+Conclusion: Lack of information
+====================================================================================================
+No: 9
+Prompt: Open the User Management page and assign the Viewer role to the user with username john_doe.
+Conclusion: Enough information
+====================================================================================================
+No: 10
+Prompt: Validate the Python syntax of the file data_extractor.py and display all syntax errors with their corresponding line numbers.
+Conclusion: Enough information
+====================================================================================================
+No: 11
+Prompt: Open the workflow configuration page and change the execution timeout of Invoice Processing to 120 seconds.
+Conclusion: Enough information
+====================================================================================================
+No: 12
+Prompt: Extract the product names and prices from the first five results displayed on the product search page and save the extracted data to products.csv.
+Conclusion: Lack of information
+====================================================================================================
+No: 13
+Prompt: If the execution status of Invoice Processing is Failed, send an email notification to admin@example.com with the workflow name and error message in the email body.
+Conclusion: Lack of information
+====================================================================================================
+No: 14
+Prompt: Create a reusable Python function named calculate_total that accepts a list of numeric prices and returns their sum.
+Conclusion: Enough information
+====================================================================================================
+No: 15
+Prompt: Open the Bot Management page, select the bot named InvoiceBot, assign it to the Invoice Processing workflow, and save the configuration.
+Conclusion: Lack of information
+====================================================================================================
+No: 16
+Prompt: Open the dashboard and display the relevant information.
+Conclusion: Lack of information
+====================================================================================================
+No: 17
+Prompt: Create a new automation workflow.
+Conclusion: Lack of information
+====================================================================================================
+No: 18
+Prompt: Search for workflows using an appropriate keyword.
+Conclusion: Lack of information
+====================================================================================================
+No: 19
+Prompt: Upload the Python script to the RPA platform.
+Conclusion: Lack of information
+====================================================================================================
+No: 20
+Prompt: Execute the workflow and display its status.
+Conclusion: Lack of information
+====================================================================================================
+No: 21
+Prompt: Schedule the automation bot to run automatically.
+Conclusion: Lack of information
+====================================================================================================
+No: 22
+Prompt: Filter the execution history based on its status.
+Conclusion: Lack of information
+====================================================================================================
+No: 23
+Prompt: Export the workflow execution logs to a file.
+Conclusion: Lack of information
+====================================================================================================
+No: 24
+Prompt: Assign an appropriate role to the selected user.
+Conclusion: Lack of information
+====================================================================================================
+No: 25
+Prompt: Validate the Python script and fix any problems found.
+Conclusion: Lack of information
+====================================================================================================
+No: 26
+Prompt: Change the workflow execution configuration to an appropriate value.
+Conclusion: Lack of information
+====================================================================================================
+No: 27
+Prompt: Extract customer information from the website and save the results.
+Conclusion: Lack of information
+====================================================================================================
+No: 28
+Prompt: If the workflow encounters an error, notify the appropriate person.
+Conclusion: Lack of information
+====================================================================================================
+No: 29
+Prompt: Create a reusable Python function to process the input data.
+Conclusion: Lack of information
+====================================================================================================
+No: 30
+Prompt: Assign the automation bot to the workflow and configure its execution settings.
+Conclusion: Lack of information
+====================================================================================================

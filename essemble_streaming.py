@@ -56,6 +56,7 @@ class Essemble_Multi_Stream:
         if not generated_functions or not self.functions:
             return
 
+        
         best_matches = {}
         for generated_function in generated_functions:
             generated_embedding = get_text_embeddings(generated_function)
